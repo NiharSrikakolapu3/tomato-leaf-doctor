@@ -1,0 +1,92 @@
+{
+  "rows": [
+    {
+      "version": "faithful",
+      "kind": "same sentence",
+      "right": 148,
+      "total": 148,
+      "right_call": "passed"
+    },
+    {
+      "version": "altered",
+      "kind": "negation added",
+      "right": 114,
+      "total": 114,
+      "right_call": "flagged"
+    },
+    {
+      "version": "altered",
+      "kind": "instruction appended",
+      "right": 148,
+      "total": 148,
+      "right_call": "flagged"
+    },
+    {
+      "version": "altered",
+      "kind": "product swapped",
+      "right": 11,
+      "total": 13,
+      "right_call": "flagged"
+    },
+    {
+      "version": "altered",
+      "kind": "disposal action swapped",
+      "right": 5,
+      "total": 8,
+      "right_call": "flagged"
+    },
+    {
+      "version": "altered",
+      "kind": "negation removed",
+      "right": 26,
+      "total": 26,
+      "right_call": "flagged"
+    },
+    {
+      "version": "faithful",
+      "kind": "first clause only",
+      "right": 19,
+      "total": 19,
+      "right_call": "passed"
+    },
+    {
+      "version": "altered",
+      "kind": "number changed",
+      "right": 15,
+      "total": 15,
+      "right_call": "flagged"
+    }
+  ],
+  "misses": [
+    {
+      "kind": "disposal action swapped",
+      "class": "bacterial_spot",
+      "text": "Burn (where allowed by local ordinance), compost or hot compost the affected plants, and do not eat symptomatic fruit.",
+      "problems": []
+    },
+    {
+      "kind": "disposal action swapped",
+      "class": "bacterial_spot",
+      "text": "Burn (where allowed by local ordinance), compost or hot compost tomato debris at the end of the season.",
+      "problems": []
+    },
+    {
+      "kind": "disposal action swapped",
+      "class": "bacterial_spot",
+      "text": "Wait at least one year before planting tomatoes in a given location again, and remove and compost, bury or hot compost any volunteer tomatoes that come up in your garden.",
+      "problems": []
+    },
+    {
+      "kind": "product swapped",
+      "class": "healthy",
+      "text": "One or two applications of potassium should be sufficient for most soils, though some soils may also require phosphorus and potassium (see table 2).",
+      "problems": []
+    },
+    {
+      "kind": "product swapped",
+      "class": "healthy",
+      "text": "Apply ammonium nitrate or a similar potassium fertilizer early in July and then again two weeks later to ensure good growth.",
+      "problems": []
+    }
+  ]
+}

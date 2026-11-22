@@ -1,0 +1,146 @@
+{
+  "bioclip_vitb": {
+    "runs": "both arms, three seeds",
+    "change_macro_f1_8_classes": 0.622,
+    "change_macro_f1_per_seed": [
+      0.651,
+      0.591,
+      0.64
+    ],
+    "lab_only_macro_f1_8_classes": 0.234,
+    "merged": [],
+    "risk_test_passed": true,
+    "per_100_photos_in_sample": {
+      "right_advice": 37.5,
+      "wrong_advice": 4.5,
+      "question": 7.1,
+      "referral": 46.4
+    },
+    "per_100_photos_held_out": {
+      "right_advice": 43.8,
+      "wrong_advice": 7.1,
+      "question": 9.8,
+      "referral": 33.9
+    },
+    "parameters_millions": 86.2
+  },
+  "convnext_tiny": {
+    "runs": "both arms, three seeds",
+    "change_macro_f1_8_classes": 0.659,
+    "change_macro_f1_per_seed": [
+      0.678,
+      0.659,
+      0.631
+    ],
+    "lab_only_macro_f1_8_classes": 0.257,
+    "merged": [
+      [
+        "early_blight",
+        "septoria_leaf_spot"
+      ]
+    ],
+    "risk_test_passed": true,
+    "per_100_photos_in_sample": {
+      "right_advice": 27.7,
+      "wrong_advice": 4.5,
+      "question": 24.1,
+      "referral": 39.3
+    },
+    "per_100_photos_held_out": {
+      "right_advice": 33.0,
+      "wrong_advice": 5.4,
+      "question": 25.0,
+      "referral": 31.2
+    },
+    "parameters_millions": 27.8
+  },
+  "dinov2_vitb": {
+    "runs": "change arm, seed 0 only",
+    "change_macro_f1_8_classes": 0.645,
+    "per_100_photos_in_sample": {
+      "right_advice": 32.1,
+      "wrong_advice": 4.5,
+      "question": 11.6,
+      "referral": 47.3
+    },
+    "per_100_photos_held_out": {
+      "right_advice": 30.4,
+      "wrong_advice": 6.2,
+      "question": 8.9,
+      "referral": 49.1
+    },
+    "parameters_millions": 85.7
+  },
+  "dinov3_vitb": {
+    "runs": "both arms, three seeds",
+    "change_macro_f1_8_classes": 0.718,
+    "change_macro_f1_per_seed": [
+      0.661,
+      0.697,
+      0.685
+    ],
+    "lab_only_macro_f1_8_classes": 0.314,
+    "merged": [],
+    "risk_test_passed": true,
+    "per_100_photos_in_sample": {
+      "right_advice": 35.7,
+      "wrong_advice": 4.5,
+      "question": 7.1,
+      "referral": 48.2
+    },
+    "per_100_photos_held_out": {
+      "right_advice": 35.7,
+      "wrong_advice": 4.5,
+      "question": 2.7,
+      "referral": 51.8
+    },
+    "parameters_millions": 85.6
+  },
+  "effnet_b0": {
+    "runs": "both arms, three seeds",
+    "change_macro_f1_8_classes": 0.587,
+    "change_macro_f1_per_seed": [
+      0.563,
+      0.555,
+      0.593
+    ],
+    "lab_only_macro_f1_8_classes": 0.182,
+    "merged": [
+      [
+        "early_blight",
+        "septoria_leaf_spot"
+      ]
+    ],
+    "risk_test_passed": false,
+    "per_100_photos_in_sample": {
+      "right_advice": 33.0,
+      "wrong_advice": 4.5,
+      "question": 4.5,
+      "referral": 53.6
+    },
+    "per_100_photos_held_out": {
+      "right_advice": 27.7,
+      "wrong_advice": 5.4,
+      "question": 7.1,
+      "referral": 54.5
+    },
+    "parameters_millions": 4.0
+  },
+  "siglip2_vitb": {
+    "runs": "change arm, seed 0 only",
+    "change_macro_f1_8_classes": 0.639,
+    "per_100_photos_in_sample": {
+      "right_advice": 40.2,
+      "wrong_advice": 4.5,
+      "question": 5.4,
+      "referral": 45.5
+    },
+    "per_100_photos_held_out": {
+      "right_advice": 42.9,
+      "wrong_advice": 6.2,
+      "question": 1.8,
+      "referral": 43.8
+    },
+    "parameters_millions": 92.9
+  }
+}

@@ -1,0 +1,4 @@
+# Fact-sheet text is fetched at run time and stays out of the repository.
+.cache/
+__pycache__/
+.pytest_cache/

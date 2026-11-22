@@ -1,0 +1,2233 @@
+{
+  "writer": "Qwen/Qwen2.5-1.5B-Instruct",
+  "decoding": "greedy",
+  "clinic": {
+    "name": "UW-Madison Plant Disease Diagnostics Clinic",
+    "url": "https://pddc.wisc.edu/",
+    "contact": "608-262-2863 or pddc@wisc.edu"
+  },
+  "care": {
+    "bacterial_spot": {
+      "name": "bacterial spot",
+      "classes": [
+        "bacterial_spot"
+      ],
+      "sources": [
+        {
+          "title": "Bacterial Spot of Tomato (UW Plant Disease Facts D0012)",
+          "url": "https://pddc.wisc.edu/2017/02/17/bacterial-spot-tomato/",
+          "care_sha": "62750693dc5d4a4e",
+          "symptoms_sha": "2dafe84d09ad2b68"
+        }
+      ],
+      "care_sentences": [
+        "A plant with bacterial spot cannot be cured.",
+        "Remove symptomatic plants from your garden or greenhouse to prevent the spread of bacteria to healthy plants.",
+        "Burn (where allowed by local ordinance), bury or hot compost the affected plants, and do not eat symptomatic fruit.",
+        "Although bacterial spot pathogens are not human pathogens, the fruit blemishes that they cause can provide entry points for human pathogens that could cause illness.",
+        "Plant pathogen-free seed or transplants to prevent the introduction of bacterial spot pathogens on contaminated seed or seedlings.",
+        "If a clean seed source is not available or you suspect that your seed is contaminated, consider treating the seed in hot water prior to planting to eliminate the pathogens.",
+        "For details on this process, including the proper temperature and length of treatment, see UW Plant Disease Facts D0064, Hot-Water Seed Treatment for Disease Management.",
+        "To keep leaves dry and to prevent the spread of the pathogens, avoid overhead watering (e.g., with a wand or sprinkler) of established plants.",
+        "Instead use a drip-tape or soaker-hose.",
+        "Also, to prevent spread, do not handle plants when they are wet (e.g., from dew), and routinely sterilize tools with either 10% bleach solution or (better due to its less corrosive properties) 70% alcohol (e.g., rubbing alcohol).",
+        "Where bacterial spot has been a recurring problem, consider using preventative applications of copper-based products registered for use on tomato, especially during warm, wet periods.",
+        "Keep in mind however, that if used excessively or for prolonged periods, copper may no longer control the disease.",
+        "Be sure to read and follow all label instructions of the product that you select to ensure that you use it in the safest and most effective manner possible.",
+        "Burn (where allowed by local ordinance), bury or hot compost tomato debris at the end of the season.",
+        "Wait at least one year before planting tomatoes in a given location again, and remove and burn, bury or hot compost any volunteer tomatoes that come up in your garden."
+      ],
+      "raw": "1. Remove infected plants [1].\n2. Treat seeds with hot water [6].\n3. Avoid wetting leaves [8].",
+      "steps": [
+        {
+          "shown": "Remove infected plants.",
+          "quoted": false,
+          "check": {
+            "text": "Remove infected plants.",
+            "cited": [
+              1
+            ],
+            "ok": true,
+            "support": 1.0,
+            "problems": [],
+            "recited": true
+          },
+          "source": "https://pddc.wisc.edu/2017/02/17/bacterial-spot-tomato/"
+        },
+        {
+          "shown": "Treat seeds with hot water.",
+          "quoted": false,
+          "check": {
+            "text": "Treat seeds with hot water.",
+            "cited": [
+              5
+            ],
+            "ok": true,
+            "support": 1.0,
+            "problems": [],
+            "recited": false
+          },
+          "source": "https://pddc.wisc.edu/2017/02/17/bacterial-spot-tomato/"
+        },
+        {
+          "shown": "“To keep leaves dry and to prevent the spread of the pathogens, avoid overhead watering (e.g., with a wand or sprinkler) of established plants.”",
+          "quoted": true,
+          "check": {
+            "text": "Avoid wetting leaves.",
+            "cited": [
+              7
+            ],
+            "ok": false,
+            "support": 0.5,
+            "problems": [
+              "words not in source: wet",
+              "1 negations, source part has 0"
+            ],
+            "recited": false
+          },
+          "source": "https://pddc.wisc.edu/2017/02/17/bacterial-spot-tomato/"
+        }
+      ],
+      "warnings": [
+        {
+          "shown": "“Burn (where allowed by local ordinance), bury or hot compost the affected plants, and do not eat symptomatic fruit.”",
+          "index": 2,
+          "source": "https://pddc.wisc.edu/2017/02/17/bacterial-spot-tomato/"
+        },
+        {
+          "shown": "“Also, to prevent spread, do not handle plants when they are wet (e.g., from dew), and routinely sterilize tools with either 10% bleach solution or (better due to its less corrosive properties) 70% alcohol (e.g., rubbing alcohol).”",
+          "index": 9,
+          "source": "https://pddc.wisc.edu/2017/02/17/bacterial-spot-tomato/"
+        }
+      ]
+    },
+    "early_blight": {
+      "name": "early blight",
+      "classes": [
+        "early_blight"
+      ],
+      "sources": [
+        {
+          "title": "Early Blight (UW Plant Disease Facts D0046)",
+          "url": "https://pddc.wisc.edu/2015/07/23/early-blight/",
+          "care_sha": "948680f0b122ea33",
+          "symptoms_sha": "33e522362b8bd874"
+        }
+      ],
+      "care_sentences": [
+        "Once symptoms of early blight appear, control is difficult.",
+        "Thinning of whole plants or removal of selected branches from individual plants may slow the disease by increasing airflow and thus reducing humidity and the length of time that leaves remain wet.",
+        "Fungicides labeled for use on vegetables and containing copper or chlorothalonil may also provide control of early blight if they are carefully applied very early in the course of the disease (before symptoms develop is best) and on a regular basis throughout the rest of the growing season.",
+        "If you decide to use fungicides for disease control, be sure to read and follow all label instructions of the fungicide that you select to ensure that you use the product in the safest and most effective manner possible.",
+        "Destroy infected plants and plant debris by burning (where allowed by local ordinance) or burying them.",
+        "Move vegetables to different parts of your garden each year to avoid areas where the early blight fungus may be present.",
+        "See University of Wisconsin Garden Facts XHT1210, Using Crop Rotation in the Home Vegetable Garden, for details on this technique.",
+        "Use early blight-resistant vegetable varieties whenever possible.",
+        "Increase spacing between plants to increase airflow, and decrease humidity and foliage drying time.",
+        "Mulch your garden with approximately one inch of a high quality mulch, but do not overmulch as this can lead to wet soils that can contribute to increased humidity.",
+        "Finally, where the disease has been a chronic problem, use of preventative applications of a copper or chlorothalonil-containing fungicide labeled for use on vegetables may be warranted."
+      ],
+      "raw": "1. [1] Remove diseased leaves promptly.\n2. [2] Thin out plants to improve air circulation.\n3. [3] Apply copper or chlorothalonil fungicides regularly.",
+      "steps": [
+        {
+          "shown": "“Once symptoms of early blight appear, control is difficult.”",
+          "quoted": true,
+          "check": {
+            "text": "Remove diseased leaves promptly.",
+            "cited": [
+              0
+            ],
+            "ok": false,
+            "support": 0.0,
+            "problems": [
+              "words not in source: leaf prompt remov sick",
+              "adds action words: remov"
+            ],
+            "recited": false
+          },
+          "source": "https://pddc.wisc.edu/2015/07/23/early-blight/"
+        },
+        {
+          "shown": "“Thinning of whole plants or removal of selected branches from individual plants may slow the disease by increasing airflow and thus reducing humidity and the length of time that leaves remain wet.”",
+          "quoted": true,
+          "check": {
+            "text": "Thin out plants to improve air circulation.",
+            "cited": [
+              1
+            ],
+            "ok": false,
+            "support": 0.4,
+            "problems": [
+              "words not in source: air circul improv"
+            ],
+            "recited": false
+          },
+          "source": "https://pddc.wisc.edu/2015/07/23/early-blight/"
+        },
+        {
+          "shown": "“Fungicides labeled for use on vegetables and containing copper or chlorothalonil may also provide control of early blight if they are carefully applied very early in the course of the disease (before symptoms develop is best) and on a regular basis throughout the rest of the growing season.”",
+          "quoted": true,
+          "check": {
+            "text": "Apply copper or chlorothalonil fungicides regularly.",
+            "cited": [
+              2
+            ],
+            "ok": false,
+            "support": 1.0,
+            "problems": [
+              "drops the source's 'label' wording"
+            ],
+            "recited": false
+          },
+          "source": "https://pddc.wisc.edu/2015/07/23/early-blight/"
+        }
+      ],
+      "warnings": []
+    },
+    "late_blight": {
+      "name": "late blight",
+      "classes": [
+        "late_blight"
+      ],
+      "sources": [
+        {
+          "title": "Late Blight (UW Plant Disease Facts D0068)",
+          "url": "https://pddc.wisc.edu/2015/07/28/late-blight/",
+          "care_sha": "347c863c87e1efe1",
+          "symptoms_sha": "5d87ac0dae306fac"
+        }
+      ],
+      "care_sentences": [
+        "Plants showing symptoms of late blight cannot be saved and should be disposed of immediately to limit spread of P. infestans to other plants.",
+        "For home gardeners, the preferred method of disposal is to pull affected plants (roots and all), and place them in plastic bags.",
+        "The bags should be left in the sun for a few days to make sure that plants, as well as any P. infestans, are totally killed.",
+        "Bagged plants should then be put out for trash pickup.",
+        "Diseased plants or plant parts (e.g., tomato fruits or potato tubers) should not be composted.",
+        "Healthy-looking fruits from late-blight-affected tomato plants are safe to eat or preserve.",
+        "However, before attempting to preserve any fruit or vegetable, contact your county UW-Extension office for the most current food preservation instructions.",
+        "Once tomato fruits or potato tubers begin to show symptoms of late blight, they should NOT be eaten, nor should they be canned or otherwise preserved.",
+        "In the spring, dispose of any volunteer tomato and potato plants (as well as weeds such as nightshade) as described above.",
+        "All of these plants are potential sources of P. infestans.",
+        "For the same reason, do not use tubers from a previous year’s potato crop as seed potatoes.",
+        "Instead purchase certified seed potatoes from a reputable supplier each year.",
+        "Also, consider planting tomato varieties with late blight tolerance or resistance.",
+        "Such varieties include ‘Defiant PHR’, ‘Iron Lady’, ‘Jasper’, ‘JTO-545’, ‘Lemon Drop’, ‘Matt’s Wild Cherry’, ‘Mountain Magic’, ‘Mountain Merit’, ‘Mr. Stripey’, ‘Plum Regal’, ‘Pruden’s Purple’, ‘Stellar’ and ‘Wapsipinicon Peach.’ The performance of these varieties may vary depending on the variant or strain of P. infestans that is present in a particular growing season, and depending on the weather conditions.",
+        "Consider planting several resistant tomato varieties to help ensure that no matter what P. infestans variant is prevalent in a given year, you will have some healthy tomato plants and fruits.",
+        "Fungicides also can be used to reduce the impact of late blight.",
+        "However, fungicide applications must be made prior to the onset of disease or they will be ineffective.",
+        "Fungicide applications are not needed during periods of hot, dry weather as P. infestans is not likely to be active under these conditions.",
+        "Fungicides are most likely to be useful during periods of cool, wet weather.",
+        "However, if weather conditions are excessively cool and wet, even properly-timed fungicide applications may not provide adequate late blight control.",
+        "If you decide to use fungicides, select a product that is labeled for use on tomatoes (or potatoes) and that contains chlorothalonil or copper as the active ingredient.",
+        "Certain, but not all, copper-containing products can be used for organic vegetable production.",
+        "Be sure to follow all label instructions to ensure that you use the product that you select in the safest, most effective means possible.",
+        "For more information on home garden fungicides for vegetable disease control, see UW Plant Disease Facts D0062, Home Vegetable Garden Fungicides."
+      ],
+      "raw": "1. Pull infected plants [1].\n2. Place roots and leaves in plastic bags [2].\n3. Leave bags in direct sunlight for a few days [3].",
+      "steps": [
+        {
+          "shown": "Pull infected plants.",
+          "quoted": false,
+          "check": {
+            "text": "Pull infected plants.",
+            "cited": [
+              1
+            ],
+            "ok": true,
+            "support": 1.0,
+            "problems": [],
+            "recited": true
+          },
+          "source": "https://pddc.wisc.edu/2015/07/28/late-blight/"
+        },
+        {
+          "shown": "“The bags should be left in the sun for a few days to make sure that plants, as well as any P. infestans, are totally killed.”",
+          "quoted": true,
+          "check": {
+            "text": "Leave bags in direct sunlight for a few days.",
+            "cited": [
+              2
+            ],
+            "ok": false,
+            "support": 0.833,
+            "problems": [
+              "words not in source: direct"
+            ],
+            "recited": false
+          },
+          "source": "https://pddc.wisc.edu/2015/07/28/late-blight/"
+        }
+      ],
+      "warnings": [
+        {
+          "shown": "“Diseased plants or plant parts (e.g., tomato fruits or potato tubers) should not be composted.”",
+          "index": 4,
+          "source": "https://pddc.wisc.edu/2015/07/28/late-blight/"
+        },
+        {
+          "shown": "“Once tomato fruits or potato tubers begin to show symptoms of late blight, they should NOT be eaten, nor should they be canned or otherwise preserved.”",
+          "index": 7,
+          "source": "https://pddc.wisc.edu/2015/07/28/late-blight/"
+        }
+      ]
+    },
+    "leaf_mold": {
+      "name": "leaf mold",
+      "classes": [
+        "leaf_mold"
+      ],
+      "sources": [
+        {
+          "title": "Tomato Leaf Mold (UConn Extension IPM)",
+          "url": "https://ipm.cahnr.uconn.edu/tomato-leaf-mold/",
+          "care_sha": "3c88c0dce61c0fd7",
+          "symptoms_sha": "17e6873e92797aae"
+        }
+      ],
+      "care_sentences": [
+        "Improve Air Circulation: Space plants adequately, stake or trellis them to enhance airflow, and prune excess branches and dead leaves to reduce humidity around the plant.",
+        "Locate rows parallel to prevalent wind direction in open areas to facilitate drying.",
+        "Reduce Humidity: Use fans in greenhouses, ensure proper ventilation, and avoid overhead watering to minimize leaf wetness.",
+        "Maintain night temperatures higher than outside in greenhouses to reduce condensation.",
+        "Sanitation: Remove and destroy infected plant material promptly to prevent spore spread.",
+        "Sanitize tools, equipment, and greenhouse structures between seasons to eliminate surviving spores.",
+        "Practice good garden sanitation by removing fallen leaves and debris.",
+        "Crop Rotation and Site Management: Rotate crops and avoid planting tomatoes in the same location for at least one year to reduce soil-borne inoculum.",
+        "Move high tunnels regularly to prevent re-infection from residual spores.",
+        "Consult New England Vegetable Management Guide for a list of labeled products."
+      ],
+      "raw": "1. Space plants [1]\n2. Prune dead leaves [4]\n3. Avoid overhead watering [3]\n\n1. Space plants [1]\n2. Prune dead leaves [4]\n3. Avoid overhead watering [3]",
+      "steps": [
+        {
+          "shown": "Space plants.",
+          "quoted": false,
+          "check": {
+            "text": "Space plants.",
+            "cited": [
+              0
+            ],
+            "ok": true,
+            "support": 1.0,
+            "problems": [],
+            "recited": false
+          },
+          "source": "https://ipm.cahnr.uconn.edu/tomato-leaf-mold/"
+        },
+        {
+          "shown": "Prune dead leaves.",
+          "quoted": false,
+          "check": {
+            "text": "Prune dead leaves.",
+            "cited": [
+              0
+            ],
+            "ok": true,
+            "support": 1.0,
+            "problems": [],
+            "recited": true
+          },
+          "source": "https://ipm.cahnr.uconn.edu/tomato-leaf-mold/"
+        },
+        {
+          "shown": "Avoid overhead watering.",
+          "quoted": false,
+          "check": {
+            "text": "Avoid overhead watering.",
+            "cited": [
+              2
+            ],
+            "ok": true,
+            "support": 1.0,
+            "problems": [],
+            "recited": false
+          },
+          "source": "https://ipm.cahnr.uconn.edu/tomato-leaf-mold/"
+        }
+      ],
+      "warnings": []
+    },
+    "septoria_leaf_spot": {
+      "name": "Septoria leaf spot",
+      "classes": [
+        "septoria_leaf_spot"
+      ],
+      "sources": [
+        {
+          "title": "Septoria Leaf Spot (UW Plant Disease Facts D0100)",
+          "url": "https://pddc.wisc.edu/2015/08/16/septoria-leaf-spot/",
+          "care_sha": "ed118fe0521712ce",
+          "symptoms_sha": "5c2ade42ddc48b43"
+        }
+      ],
+      "care_sentences": [
+        "Once symptoms of Septoria leaf spot appear, control is difficult.",
+        "Thinning of whole plants or removal of selected branches from individual plants may slow the disease by increasing airflow and thus reducing humidity and the length of time that leaves remain wet.",
+        "Fungicides labeled for use on vegetables and containing copper or chlorothalonil may also provide control of Septoria leaf spot if they are carefully applied very early in the course of the disease (before symptoms develop is best) and on a regular basis throughout the rest of the growing season.",
+        "If you decide to use fungicides for disease control, be sure to read and follow all label instructions of the fungicide that you select to ensure that you use the product in the safest and most effective manner possible.",
+        "Septoria leaf spot is best controlled using preventative measures.",
+        "Destroy infested plants by burning (where allowed by local ordinance) or burying them.",
+        "Rotate vegetables to different parts of your garden each year to avoid areas where infested debris (and thus spores of Septoria lycopersici) may be present.",
+        "See University of Wisconsin Garden Facts XHT1210, Using Crop Rotation in the Home Vegetable Garden, for details on this technique.",
+        "Use Septoria leaf spot-resistant tomato varieties whenever possible.",
+        "Increase spacing between plants to increase airflow and decrease humidity and foliage drying time.",
+        "Mulch your garden with approximately one inch of a high quality mulch, but do not overmulch as this can lead to wet soils that can contribute to increased humidity.",
+        "Finally, where the disease has been a chronic problem, use of preventative applications of a copper or chlorothalonil-containing fungicide labeled for use on vegetables may be warranted."
+      ],
+      "raw": "1. [1] Remove infected plant material promptly.\n2. [2] Thin out entire plants or remove specific branches.\n3. [3] Apply copper or chlorothalonil fungicides regularly.",
+      "steps": [
+        {
+          "shown": "“Once symptoms of Septoria leaf spot appear, control is difficult.”",
+          "quoted": true,
+          "check": {
+            "text": "Remove infected plant material promptly.",
+            "cited": [
+              0
+            ],
+            "ok": false,
+            "support": 0.0,
+            "problems": [
+              "words not in source: materi plant prompt remov sick",
+              "adds action words: remov"
+            ],
+            "recited": false
+          },
+          "source": "https://pddc.wisc.edu/2015/08/16/septoria-leaf-spot/"
+        },
+        {
+          "shown": "“Thinning of whole plants or removal of selected branches from individual plants may slow the disease by increasing airflow and thus reducing humidity and the length of time that leaves remain wet.”",
+          "quoted": true,
+          "check": {
+            "text": "Thin out entire plants or remove specific branches.",
+            "cited": [
+              1
+            ],
+            "ok": false,
+            "support": 0.667,
+            "problems": [
+              "words not in source: entir specif"
+            ],
+            "recited": false
+          },
+          "source": "https://pddc.wisc.edu/2015/08/16/septoria-leaf-spot/"
+        },
+        {
+          "shown": "“Fungicides labeled for use on vegetables and containing copper or chlorothalonil may also provide control of Septoria leaf spot if they are carefully applied very early in the course of the disease (before symptoms develop is best) and on a regular basis throughout the rest of the growing season.”",
+          "quoted": true,
+          "check": {
+            "text": "Apply copper or chlorothalonil fungicides regularly.",
+            "cited": [
+              2
+            ],
+            "ok": false,
+            "support": 1.0,
+            "problems": [
+              "drops the source's 'label' wording"
+            ],
+            "recited": false
+          },
+          "source": "https://pddc.wisc.edu/2015/08/16/septoria-leaf-spot/"
+        }
+      ],
+      "warnings": []
+    },
+    "mosaic_virus": {
+      "name": "mosaic virus",
+      "classes": [
+        "mosaic_virus"
+      ],
+      "sources": [
+        {
+          "title": "Tobacco Mosaic (UW Plant Disease Facts D0115)",
+          "url": "https://pddc.wisc.edu/2021/02/19/tobacco-mosaic/",
+          "care_sha": "5fede57a5e07613f",
+          "symptoms_sha": "23cca3f5885c474c"
+        }
+      ],
+      "care_sentences": [
+        "There is no cure for tobacco mosaic.",
+        "Once infected, plants remain infected for life, and typically the virus spreads throughout the plant from the point of infection.",
+        "Infected plants and any associated debris should be burned (where allowed by local ordinance) or double-bagged and disposed of in a landfill.",
+        "Do not compost plants with this disease.",
+        "Thoroughly decontaminate any items that have come into contact with infected plants or their debris by treating them for a minimum of one minute with:",
+        "2.75 tablespoons Alconox® (a lab detergent) plus 2.5 tablespoons sodium lauryl sulfate (SLS), also known as sodium dodecyl sulfate (SDS), in one gallon of water, or",
+        "14 dry ounces of trisodium phosphate in one gallon of water.",
+        "These ingredients can be ordered on the internet.",
+        "If you decide to use SLS (SDS), be sure to wear gloves, safety goggles and a dust mask, and mix the solution in a well-ventilated area as SLS (SDS) is a known skin and eye irritant.",
+        "Once treated, rinse items with sufficient water to remove any residues.",
+        "Also, thoroughly wash your hands with soap and water, and launder any clothing that you wore while disposing of infected plants and debris.",
+        "Inspect plants prior to purchase for any symptoms of tobacco mosaic, and do not buy symptomatic plants.",
+        "Purchase seed from a reputable supplier that routinely inspects their seed-producing plants for symptoms of viral (and other) diseases.",
+        "If you use tobacco products, do not use them around plants.",
+        "Also, wash your hands thoroughly with soap and water prior to handling plants, and consider wearing freshly laundered clothing when gardening.",
+        "Finally, decontaminate (as described above) any items that might harbor TMV to help prevent spread.",
+        "Even if you do not use tobacco products, routine handwashing and decontamination of gardening tools and other items can help prevent tobacco mosaic from being a problem."
+      ],
+      "raw": "1. Decontaminate gardening tools [1].\n2. Wash hands before handling plants [11].\n3. Wear fresh clothes when gardening [15].",
+      "steps": [
+        {
+          "shown": "Decontaminate gardening tools.",
+          "quoted": false,
+          "check": {
+            "text": "Decontaminate gardening tools.",
+            "cited": [
+              16
+            ],
+            "ok": true,
+            "support": 1.0,
+            "problems": [],
+            "recited": true
+          },
+          "source": "https://pddc.wisc.edu/2021/02/19/tobacco-mosaic/"
+        },
+        {
+          "shown": "Wash hands before handling plants.",
+          "quoted": false,
+          "check": {
+            "text": "Wash hands before handling plants.",
+            "cited": [
+              14
+            ],
+            "ok": true,
+            "support": 1.0,
+            "problems": [],
+            "recited": true
+          },
+          "source": "https://pddc.wisc.edu/2021/02/19/tobacco-mosaic/"
+        },
+        {
+          "shown": "Wear fresh clothes when gardening.",
+          "quoted": false,
+          "check": {
+            "text": "Wear fresh clothes when gardening.",
+            "cited": [
+              14
+            ],
+            "ok": true,
+            "support": 1.0,
+            "problems": [],
+            "recited": false
+          },
+          "source": "https://pddc.wisc.edu/2021/02/19/tobacco-mosaic/"
+        }
+      ],
+      "warnings": [
+        {
+          "shown": "“Do not compost plants with this disease.”",
+          "index": 3,
+          "source": "https://pddc.wisc.edu/2021/02/19/tobacco-mosaic/"
+        },
+        {
+          "shown": "“Inspect plants prior to purchase for any symptoms of tobacco mosaic, and do not buy symptomatic plants.”",
+          "index": 11,
+          "source": "https://pddc.wisc.edu/2021/02/19/tobacco-mosaic/"
+        }
+      ]
+    },
+    "yellow_leaf_curl_virus": {
+      "name": "tomato yellow leaf curl virus",
+      "classes": [
+        "yellow_leaf_curl_virus"
+      ],
+      "sources": [
+        {
+          "title": "Tomato Yellow Leaf Curl Virus (NC State Extension)",
+          "url": "https://content.ces.ncsu.edu/tomato-yellow-leaf-curl-virus",
+          "care_sha": "513e3a5836895e78",
+          "symptoms_sha": "d2b7e47550cd03a0"
+        }
+      ],
+      "care_sentences": [
+        "Use disease resistant cultivars",
+        "In both field and greenhouse production, planting resistant cultivars is an economical option to manage this disease.",
+        "Resistant varieties are less effective if tomatoes are infected early in the season.",
+        "Seed suppliers usually provide disease resistance information.",
+        "Included below is a table in the Southeastern Vegetable Crop Handbook that includes resistance information for numerous tomato cultivars.",
+        "Source clean transplants",
+        "Avoid planting transplants that look unhealthy.",
+        "Look for transplants grown in cooler climates such as western North Carolina since virus transmitting whiteflies do not overwinter in cooler climates.",
+        "Therefore, avoid transplants from Florida and Georgia.",
+        "Rotate with non-host crops on an annual basis",
+        "These include non-solanaceous crops such as brassicas (broccoli, kale, cabbage), grain crops (corn, wheat), and winter cover crops (rye, winter pea, etc.).",
+        "Crop rotation helps prevent the spread of TYLCV and minimizes the chance of the virus being present during the next growing season.",
+        "Avoid planting other host plants close to tomato",
+        "As a preventative measure, it is best to avoid planting within close proximity to other fields of tomato, pepper, or bean, as they may be reservoirs of the virus.",
+        "Monitor the whitefly population in and near the field",
+        "Whitefly population management involves the use of pesticides and cultural practices.",
+        "Adult whiteflies are attracted to white and yellow colors.",
+        "Placing white and yellow sticky traps in and around a tomato field can help monitor the population.",
+        "Whiteflies are often found on the undersides of leaves where they lay their eggs.",
+        "Whitefly eggs are white in color and change to dark blue before hatching.",
+        "Whitefly nymphs begin feeding with their piercing mouthparts just hours after they hatch.",
+        "Leaves that have been fed on will exhibit chlorosis and whiteflies will often be visible.",
+        "Use reflective mulch",
+        "Reflective mulches repel whiteflies and reduce the spread of the virus.",
+        "Utilize whitefly proof screening, and ultraviolet (UV) absorbing plastic screens or 50-mesh density covers in greenhouse production",
+        "In closed greenhouse production, these measures aim to prevent initial infection with TYLCVvia whiteflies.",
+        "UV blocking plastic screens and 50-mesh density covers can be purchased at agricultural supply stores, home improvement stores, and hardware stores.",
+        "Remove infected plants and destroy them",
+        "Infected plants should be removed from the greenhouse or field and disposed of in the landfill or burned.",
+        "Disease management for conventional growers",
+        "There are various insecticides available for use on tomatoes to reduce whitefly populations which will aid in preventing the spread of TYLCV.",
+        "Insecticide applications are recommended 4-5 weeks after seedlings are initially planted and should continue as the fruit ripens.",
+        "Rotate the pesticides to manage whiteflies and avoid insecticide resistance in the pest.",
+        "Please refer to the list of insecticides labeled for management of whitefly on tomato in the 2023 Southeastern U.S. Vegetable Crop Handbook.",
+        "Disease management for organic growers",
+        "Implementing preventative measures is the most effective way for growers to avoid TYLCV.",
+        "Using disease resistant cultivars and rotating the fields with non-susceptible crops are important methods that can reduce the occurrence of TYLCV.",
+        "Disease management for homeowners",
+        "Homeowners should use the disease management recommendations listed above.",
+        "Additional products are available for homeowners from home improvement and hardware stores.",
+        "Neem, pyrethrin, or insecticidal soaps can minimize severe whitefly infestations.",
+        "Treatments should be applied to the undersides of leaves.",
+        "The previously listed treatments are most effective when at least two insecticides are rotated during each spraying."
+      ],
+      "raw": "1. [Use disease-resistant cultivars.] Use disease-resistant cultivars.\n2. [Plant healthy transplants.] Plant healthy transplants.\n3. [Rotate crops annually.] Rotate crops annually.\n4. [Monitor whitefly population.] Monitor whitefly population.\n5. [Remove infected plants.] Remove infected plants.",
+      "steps": [
+        {
+          "shown": "Use disease-resistant cultivars.",
+          "quoted": false,
+          "check": {
+            "text": "Use disease-resistant cultivars.",
+            "cited": [
+              0
+            ],
+            "ok": true,
+            "support": 1.0,
+            "problems": [],
+            "recited": true
+          },
+          "source": "https://content.ces.ncsu.edu/tomato-yellow-leaf-curl-virus"
+        },
+        {
+          "shown": "“Avoid planting transplants that look unhealthy.”",
+          "quoted": true,
+          "check": {
+            "text": "Plant healthy transplants.",
+            "cited": [
+              6
+            ],
+            "ok": false,
+            "support": 0.667,
+            "problems": [
+              "words not in source: healthi",
+              "0 negations, source part has 1"
+            ],
+            "recited": true
+          },
+          "source": "https://content.ces.ncsu.edu/tomato-yellow-leaf-curl-virus"
+        },
+        {
+          "shown": "Rotate crops annually.",
+          "quoted": false,
+          "check": {
+            "text": "Rotate crops annually.",
+            "cited": [
+              9
+            ],
+            "ok": true,
+            "support": 1.0,
+            "problems": [],
+            "recited": true
+          },
+          "source": "https://content.ces.ncsu.edu/tomato-yellow-leaf-curl-virus"
+        },
+        {
+          "shown": "Monitor whitefly population.",
+          "quoted": false,
+          "check": {
+            "text": "Monitor whitefly population.",
+            "cited": [
+              14
+            ],
+            "ok": true,
+            "support": 1.0,
+            "problems": [],
+            "recited": true
+          },
+          "source": "https://content.ces.ncsu.edu/tomato-yellow-leaf-curl-virus"
+        },
+        {
+          "shown": "Remove infected plants.",
+          "quoted": false,
+          "check": {
+            "text": "Remove infected plants.",
+            "cited": [
+              27
+            ],
+            "ok": true,
+            "support": 1.0,
+            "problems": [],
+            "recited": true
+          },
+          "source": "https://content.ces.ncsu.edu/tomato-yellow-leaf-curl-virus"
+        }
+      ],
+      "warnings": []
+    },
+    "healthy": {
+      "name": "no disease (healthy)",
+      "classes": [
+        "healthy"
+      ],
+      "sources": [
+        {
+          "title": "Homegrown Tomatoes for Wisconsin (UW Extension A1691)",
+          "url": "https://hort.extension.wisc.edu/articles/home-grown-tomatoes-wisconsin/",
+          "care_sha": "e9575dc98a97ab01",
+          "symptoms_sha": "e3b0c44298fc1c14"
+        }
+      ],
+      "care_sentences": [
+        "Once planted, tomatoes will need continued care to remain healthy.",
+        "Plants may require occasional watering.",
+        "Water plants at the time of planting and during dry periods.",
+        "Tomato plants should be watered to a soil depth of 8 to 10 inches as needed.",
+        "Avoid frequent shallow watering, as it will prevent good root development.",
+        "Limiting the weeds in your garden will also help to keep your plants vigorous.",
+        "Regular shallow hoeing usually works best.",
+        "Herbicides should be avoided to prevent damage to other garden plants.",
+        "Tomato plants may also need fertilization during the growing season.",
+        "One or two applications of nitrogen should be sufficient for most soils, though some soils may also require phosphorus and potassium (see table 2).",
+        "Apply ammonium nitrate or a similar nitrogen fertilizer early in July and then again two weeks later to ensure good growth.",
+        "Excessive nitrogen fertilization will result in lush green plants but few tomatoes.",
+        "A soil test will help you to accurately determine proper fertilization levels.",
+        "The effects of plant diseases range from diminished appearance of the plant to reduced fruit yield to plant death.",
+        "In general, it’s good practice to maintain a proper amount of moisture in the soil and to clean up plant debris to help prevent disease.",
+        "What follows are some common plant diseases to watch for in tomato."
+      ],
+      "raw": "1. Continue watering regularly [1].\n2. Weeds can harm plants; limit them [6].\n3. Fertilize appropriately [9].",
+      "steps": [
+        {
+          "shown": "“Once planted, tomatoes will need continued care to remain healthy.”",
+          "quoted": true,
+          "check": {
+            "text": "Continue watering regularly.",
+            "cited": [
+              0
+            ],
+            "ok": false,
+            "support": 0.333,
+            "problems": [
+              "words not in source: regular water",
+              "adds action words: water"
+            ],
+            "recited": false
+          },
+          "source": "https://hort.extension.wisc.edu/articles/home-grown-tomatoes-wisconsin/"
+        },
+        {
+          "shown": "“Limiting the weeds in your garden will also help to keep your plants vigorous.”",
+          "quoted": true,
+          "check": {
+            "text": "Weeds can harm plants; limit them.",
+            "cited": [
+              5
+            ],
+            "ok": false,
+            "support": 0.75,
+            "problems": [
+              "words not in source: harm"
+            ],
+            "recited": false
+          },
+          "source": "https://hort.extension.wisc.edu/articles/home-grown-tomatoes-wisconsin/"
+        },
+        {
+          "shown": "“Tomato plants may also need fertilization during the growing season.”",
+          "quoted": true,
+          "check": {
+            "text": "Fertilize appropriately.",
+            "cited": [
+              8
+            ],
+            "ok": false,
+            "support": 0.5,
+            "problems": [
+              "words not in source: appropri"
+            ],
+            "recited": false
+          },
+          "source": "https://hort.extension.wisc.edu/articles/home-grown-tomatoes-wisconsin/"
+        }
+      ],
+      "warnings": []
+    }
+  },
+  "signs": {
+    "bacterial_spot": {
+      "class": "bacterial_spot",
+      "raw": "Bacterial spot appears on leaves as small, sometimes water-soaked circular areas (<2>).",
+      "sentences": [
+        "Bacterial spot can affect all above ground parts of a tomato plant, including the leaves, stems, and fruit.",
+        "Bacterial spot appears on leaves as small (less than ⅛ inch), sometimes water-soaked (i.e., wet-looking) circular areas."
+      ],
+      "shown": "Bacterial spot appears on leaves as small, sometimes water-soaked circular areas.",
+      "quoted": false,
+      "check": {
+        "text": "Bacterial spot appears on leaves as small, sometimes water-soaked circular areas.",
+        "cited": [
+          1
+        ],
+        "ok": true,
+        "support": 1.0,
+        "problems": [],
+        "recited": true
+      }
+    },
+    "early_blight": {
+      "class": "early_blight",
+      "raw": "B: Roughly circular, brown spots on leaves and stems, enlarging to form concentric rings, resembling targets. [1]",
+      "sentences": [
+        "Symptoms of early blight first appear at the base of affected plants, where roughly circular, brown spots appear on leaves and stems.",
+        "As these spots enlarge, concentric rings appear giving the areas a target-like appearance."
+      ],
+      "shown": "“As these spots enlarge, concentric rings appear giving the areas a target-like appearance.”",
+      "quoted": true,
+      "check": {
+        "text": "Roughly circular, brown spots on leaves and stems, enlarging to form concentric rings, resembling targets.",
+        "cited": [
+          0
+        ],
+        "ok": false,
+        "support": 0.5,
+        "problems": [
+          "words not in source: concentr enlarg form resembl ring target"
+        ],
+        "recited": false
+      }
+    },
+    "late_blight": {
+      "class": "late_blight",
+      "raw": "Blight spots appear on leaves first as small, pale green or olive green areas that rapidly expand into larger brown-black, water-soaked, and oily lesions.",
+      "sentences": [
+        "On leaves of tomato or potato, late blight begins as pale-green or olive-green areas that quickly enlarge to become brown-black, water-soaked, and oily-looking."
+      ],
+      "shown": "“On leaves of tomato or potato, late blight begins as pale-green or olive-green areas that quickly enlarge to become brown-black, water-soaked, and oily-looking.”",
+      "quoted": true,
+      "check": {
+        "text": "Blight spots appear on leaves first as small, pale green or olive green areas that rapidly expand into larger brown-black, water-soaked, and oily lesions.",
+        "cited": [
+          0
+        ],
+        "ok": false,
+        "support": 0.6,
+        "problems": [
+          "words not in source: appear expand first larger lesion rapid small spot"
+        ],
+        "recited": true
+      }
+    },
+    "leaf_mold": {
+      "class": "leaf_mold",
+      "raw": "B: Pale green to yellowish spots on the upper leaf surface, turning bright yellow or brown; velvety olive-green to brown mold on the underside. [1]",
+      "sentences": [
+        "The disease typically shows as pale green to yellowish spots on the upper leaf surface, which may turn bright yellow or brown.",
+        "On the underside, a velvety olive-green to brown mold develops."
+      ],
+      "shown": "Pale green to yellowish spots on the upper leaf surface, turning bright yellow or brown; velvety olive-green to brown mold on the underside.",
+      "quoted": false,
+      "check": {
+        "text": "Pale green to yellowish spots on the upper leaf surface, turning bright yellow or brown; velvety olive-green to brown mold on the underside.",
+        "cited": [
+          0,
+          1
+        ],
+        "ok": true,
+        "support": 1.0,
+        "problems": [],
+        "recited": true
+      }
+    },
+    "septoria_leaf_spot": {
+      "class": "septoria_leaf_spot",
+      "raw": "B: Small white centers surrounded by dark borders on leaves and stems. [1]",
+      "sentences": [
+        "Symptoms of Septoria leaf spot first appear at the base of affected plants, where small (approximately ¼ inch diameter) spots appear on leaves and stems.",
+        "These spots typically have a whitish center and a dark border."
+      ],
+      "shown": "“These spots typically have a whitish center and a dark border.”",
+      "quoted": true,
+      "check": {
+        "text": "Small white centers surrounded by dark borders on leaves and stems.",
+        "cited": [
+          0
+        ],
+        "ok": false,
+        "support": 0.375,
+        "problems": [
+          "words not in source: border center dark surround white"
+        ],
+        "recited": false
+      }
+    },
+    "mosaic_virus": {
+      "class": "mosaic_virus",
+      "raw": "Blighted, distorted, puckered, curled, misshapen [<2>]",
+      "sentences": [
+        "Symptoms of tobacco mosaic vary in type and severity depending on the plant infected, plant age, the variant of the virus involved, and environmental conditions.",
+        "On leaves, typical symptoms include blotchy light and dark areas (called mosaic); cupping, curling, elongation (strapping), roughening, wrinkling and other growth distortions; and smaller than normal size."
+      ],
+      "shown": "“On leaves, typical symptoms include blotchy light and dark areas (called mosaic); cupping, curling, elongation (strapping), roughening, wrinkling and other growth distortions; and smaller than normal size.”",
+      "quoted": true,
+      "check": {
+        "text": "Blighted, distorted, puckered, curled, misshapen.",
+        "cited": [
+          1
+        ],
+        "ok": false,
+        "support": 0.4,
+        "problems": [
+          "words not in source: blight misshapen pucker"
+        ],
+        "recited": false
+      }
+    },
+    "yellow_leaf_curl_virus": {
+      "class": "yellow_leaf_curl_virus",
+      "raw": "B: Crumpled appearance, curling, and interveinal/marginal chlorosis [<1>]",
+      "sentences": [
+        "On tomatoes, the primary symptoms of TYLCV are interveinal and marginal chlorosis of young leaves (Figure 2), an overall crumpled appearance of the leaves, and upward and downward leaf-curling."
+      ],
+      "shown": "Crumpled appearance, curling, and interveinal/marginal chlorosis.",
+      "quoted": false,
+      "check": {
+        "text": "Crumpled appearance, curling, and interveinal/marginal chlorosis.",
+        "cited": [
+          0
+        ],
+        "ok": true,
+        "support": 1.0,
+        "problems": [],
+        "recited": false
+      }
+    }
+  },
+  "questions": [
+    {
+      "pair": [
+        "bacterial_spot",
+        "early_blight"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "Bacterial spot appears on leaves as small, sometimes water-soaked circular areas.",
+          "quoted": false,
+          "members": [
+            "bacterial_spot"
+          ],
+          "leads_to": "bacterial_spot",
+          "distinctive": [
+            "bacteri",
+            "small",
+            "soak",
+            "sometim",
+            "water"
+          ]
+        },
+        "B": {
+          "shown": "“As these spots enlarge, concentric rings appear giving the areas a target-like appearance.”",
+          "quoted": true,
+          "members": [
+            "early_blight"
+          ],
+          "leads_to": "early_blight",
+          "distinctive": [
+            "concentr",
+            "give",
+            "ring",
+            "target"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "bacterial_spot",
+        "late_blight"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "Bacterial spot appears on leaves as small, sometimes water-soaked circular areas.",
+          "quoted": false,
+          "members": [
+            "bacterial_spot"
+          ],
+          "leads_to": "bacterial_spot",
+          "distinctive": [
+            "appear",
+            "bacteri",
+            "circular",
+            "small",
+            "sometim"
+          ]
+        },
+        "B": {
+          "shown": "“On leaves of tomato or potato, late blight begins as pale-green or olive-green areas that quickly enlarge to become brown-black, water-soaked, and oily-looking.”",
+          "quoted": true,
+          "members": [
+            "late_blight"
+          ],
+          "leads_to": "late_blight",
+          "distinctive": [
+            "becom",
+            "begin",
+            "black",
+            "blight",
+            "late",
+            "oili",
+            "oliv",
+            "pale",
+            "potato",
+            "quick"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "bacterial_spot",
+        "leaf_mold"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "Bacterial spot appears on leaves as small, sometimes water-soaked circular areas.",
+          "quoted": false,
+          "members": [
+            "bacterial_spot"
+          ],
+          "leads_to": "bacterial_spot",
+          "distinctive": [
+            "appear",
+            "bacteri",
+            "circular",
+            "small",
+            "soak",
+            "sometim",
+            "water"
+          ]
+        },
+        "B": {
+          "shown": "Pale green to yellowish spots on the upper leaf surface, turning bright yellow or brown; velvety olive-green to brown mold on the underside.",
+          "quoted": false,
+          "members": [
+            "leaf_mold"
+          ],
+          "leads_to": "leaf_mold",
+          "distinctive": [
+            "bright",
+            "mold",
+            "oliv",
+            "pale",
+            "surfac",
+            "undersid",
+            "upper",
+            "velveti"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "bacterial_spot",
+        "septoria_leaf_spot"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "Bacterial spot appears on leaves as small, sometimes water-soaked circular areas.",
+          "quoted": false,
+          "members": [
+            "bacterial_spot"
+          ],
+          "leads_to": "bacterial_spot",
+          "distinctive": [
+            "area",
+            "bacteri",
+            "circular",
+            "soak",
+            "sometim",
+            "water"
+          ]
+        },
+        "B": {
+          "shown": "“These spots typically have a whitish center and a dark border.”",
+          "quoted": true,
+          "members": [
+            "septoria_leaf_spot"
+          ],
+          "leads_to": "septoria_leaf_spot",
+          "distinctive": [
+            "border",
+            "center",
+            "dark",
+            "white"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "bacterial_spot",
+        "mosaic_virus"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "Bacterial spot appears on leaves as small, sometimes water-soaked circular areas.",
+          "quoted": false,
+          "members": [
+            "bacterial_spot"
+          ],
+          "leads_to": "bacterial_spot",
+          "distinctive": [
+            "appear",
+            "bacteri",
+            "circular",
+            "small",
+            "soak",
+            "sometim",
+            "spot",
+            "water"
+          ]
+        },
+        "B": {
+          "shown": "“On leaves, typical symptoms include blotchy light and dark areas (called mosaic); cupping, curling, elongation (strapping), roughening, wrinkling and other growth distortions; and smaller than normal size.”",
+          "quoted": true,
+          "members": [
+            "mosaic_virus"
+          ],
+          "leads_to": "mosaic_virus",
+          "distinctive": [
+            "blotchi",
+            "cup",
+            "curl",
+            "dark",
+            "distort",
+            "elong",
+            "growth",
+            "light",
+            "mosaic",
+            "normal",
+            "roughen",
+            "smaller",
+            "strap",
+            "wrinkl"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "bacterial_spot",
+        "yellow_leaf_curl_virus"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "Bacterial spot appears on leaves as small, sometimes water-soaked circular areas.",
+          "quoted": false,
+          "members": [
+            "bacterial_spot"
+          ],
+          "leads_to": "bacterial_spot",
+          "distinctive": [
+            "area",
+            "bacteri",
+            "circular",
+            "small",
+            "soak",
+            "sometim",
+            "spot",
+            "water"
+          ]
+        },
+        "B": {
+          "shown": "Crumpled appearance, curling, and interveinal/marginal chlorosis.",
+          "quoted": false,
+          "members": [
+            "yellow_leaf_curl_virus"
+          ],
+          "leads_to": "yellow_leaf_curl_virus",
+          "distinctive": [
+            "chlorosi",
+            "crumpl",
+            "curl",
+            "intervein",
+            "margin"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "bacterial_spot",
+        "healthy"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Do you see this?",
+      "choices": {
+        "A": {
+          "shown": "Bacterial spot appears on leaves as small, sometimes water-soaked circular areas.",
+          "quoted": false,
+          "members": [
+            "bacterial_spot"
+          ],
+          "leads_to": "bacterial_spot",
+          "distinctive": [
+            "appear",
+            "area",
+            "bacteri",
+            "circular",
+            "leaf",
+            "small",
+            "soak",
+            "sometim",
+            "spot",
+            "water"
+          ]
+        },
+        "B": {
+          "shown": "No, I do not see this on the leaf.",
+          "fixed_text": true,
+          "leads_to": "healthy",
+          "distinctive": [
+            "(no sign)"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "early_blight",
+        "late_blight"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "“As these spots enlarge, concentric rings appear giving the areas a target-like appearance.”",
+          "quoted": true,
+          "members": [
+            "early_blight"
+          ],
+          "leads_to": "early_blight",
+          "distinctive": [
+            "appear",
+            "concentr",
+            "give",
+            "like",
+            "target"
+          ]
+        },
+        "B": {
+          "shown": "“On leaves of tomato or potato, late blight begins as pale-green or olive-green areas that quickly enlarge to become brown-black, water-soaked, and oily-looking.”",
+          "quoted": true,
+          "members": [
+            "late_blight"
+          ],
+          "leads_to": "late_blight",
+          "distinctive": [
+            "becom",
+            "begin",
+            "black",
+            "green",
+            "late",
+            "look",
+            "oili",
+            "oliv",
+            "pale",
+            "potato",
+            "quick",
+            "soak",
+            "tomato",
+            "water"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "early_blight",
+        "leaf_mold"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "“As these spots enlarge, concentric rings appear giving the areas a target-like appearance.”",
+          "quoted": true,
+          "members": [
+            "early_blight"
+          ],
+          "leads_to": "early_blight",
+          "distinctive": [
+            "appear",
+            "concentr",
+            "enlarg",
+            "give",
+            "like",
+            "ring",
+            "target"
+          ]
+        },
+        "B": {
+          "shown": "Pale green to yellowish spots on the upper leaf surface, turning bright yellow or brown; velvety olive-green to brown mold on the underside.",
+          "quoted": false,
+          "members": [
+            "leaf_mold"
+          ],
+          "leads_to": "leaf_mold",
+          "distinctive": [
+            "bright",
+            "green",
+            "mold",
+            "oliv",
+            "pale",
+            "surfac",
+            "turn",
+            "undersid",
+            "upper",
+            "velveti"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "early_blight",
+        "septoria_leaf_spot"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "“As these spots enlarge, concentric rings appear giving the areas a target-like appearance.”",
+          "quoted": true,
+          "members": [
+            "early_blight"
+          ],
+          "leads_to": "early_blight",
+          "distinctive": [
+            "area",
+            "concentr",
+            "enlarg",
+            "give",
+            "like",
+            "ring",
+            "target"
+          ]
+        },
+        "B": {
+          "shown": "“These spots typically have a whitish center and a dark border.”",
+          "quoted": true,
+          "members": [
+            "septoria_leaf_spot"
+          ],
+          "leads_to": "septoria_leaf_spot",
+          "distinctive": [
+            "border",
+            "center",
+            "dark",
+            "typic",
+            "white"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "early_blight",
+        "mosaic_virus"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "“As these spots enlarge, concentric rings appear giving the areas a target-like appearance.”",
+          "quoted": true,
+          "members": [
+            "early_blight"
+          ],
+          "leads_to": "early_blight",
+          "distinctive": [
+            "appear",
+            "concentr",
+            "enlarg",
+            "give",
+            "ring",
+            "spot",
+            "target"
+          ]
+        },
+        "B": {
+          "shown": "“On leaves, typical symptoms include blotchy light and dark areas (called mosaic); cupping, curling, elongation (strapping), roughening, wrinkling and other growth distortions; and smaller than normal size.”",
+          "quoted": true,
+          "members": [
+            "mosaic_virus"
+          ],
+          "leads_to": "mosaic_virus",
+          "distinctive": [
+            "blotchi",
+            "call",
+            "cup",
+            "curl",
+            "dark",
+            "distort",
+            "elong",
+            "growth",
+            "includ",
+            "light",
+            "mosaic",
+            "normal",
+            "roughen",
+            "size",
+            "smaller",
+            "strap",
+            "typic",
+            "wrinkl"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "early_blight",
+        "yellow_leaf_curl_virus"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "“As these spots enlarge, concentric rings appear giving the areas a target-like appearance.”",
+          "quoted": true,
+          "members": [
+            "early_blight"
+          ],
+          "leads_to": "early_blight",
+          "distinctive": [
+            "area",
+            "concentr",
+            "enlarg",
+            "give",
+            "like",
+            "ring",
+            "spot",
+            "target"
+          ]
+        },
+        "B": {
+          "shown": "Crumpled appearance, curling, and interveinal/marginal chlorosis.",
+          "quoted": false,
+          "members": [
+            "yellow_leaf_curl_virus"
+          ],
+          "leads_to": "yellow_leaf_curl_virus",
+          "distinctive": [
+            "chlorosi",
+            "crumpl",
+            "curl",
+            "intervein",
+            "margin"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "early_blight",
+        "healthy"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Do you see this?",
+      "choices": {
+        "A": {
+          "shown": "“As these spots enlarge, concentric rings appear giving the areas a target-like appearance.”",
+          "quoted": true,
+          "members": [
+            "early_blight"
+          ],
+          "leads_to": "early_blight",
+          "distinctive": [
+            "appear",
+            "area",
+            "concentr",
+            "enlarg",
+            "give",
+            "like",
+            "ring",
+            "spot",
+            "target"
+          ]
+        },
+        "B": {
+          "shown": "No, I do not see this on the leaf.",
+          "fixed_text": true,
+          "leads_to": "healthy",
+          "distinctive": [
+            "(no sign)"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "late_blight",
+        "leaf_mold"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "“On leaves of tomato or potato, late blight begins as pale-green or olive-green areas that quickly enlarge to become brown-black, water-soaked, and oily-looking.”",
+          "quoted": true,
+          "members": [
+            "late_blight"
+          ],
+          "leads_to": "late_blight",
+          "distinctive": [
+            "begin",
+            "blight",
+            "enlarg",
+            "late",
+            "oili",
+            "potato",
+            "quick",
+            "soak",
+            "tomato",
+            "water"
+          ]
+        },
+        "B": {
+          "shown": "Pale green to yellowish spots on the upper leaf surface, turning bright yellow or brown; velvety olive-green to brown mold on the underside.",
+          "quoted": false,
+          "members": [
+            "leaf_mold"
+          ],
+          "leads_to": "leaf_mold",
+          "distinctive": [
+            "bright",
+            "mold",
+            "surfac",
+            "turn",
+            "undersid",
+            "upper",
+            "velveti",
+            "yellow"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "late_blight",
+        "septoria_leaf_spot"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "“On leaves of tomato or potato, late blight begins as pale-green or olive-green areas that quickly enlarge to become brown-black, water-soaked, and oily-looking.”",
+          "quoted": true,
+          "members": [
+            "late_blight"
+          ],
+          "leads_to": "late_blight",
+          "distinctive": [
+            "area",
+            "becom",
+            "begin",
+            "black",
+            "blight",
+            "brown",
+            "enlarg",
+            "green",
+            "late",
+            "look",
+            "oili",
+            "oliv",
+            "pale",
+            "potato",
+            "quick",
+            "soak",
+            "tomato",
+            "water"
+          ]
+        },
+        "B": {
+          "shown": "“These spots typically have a whitish center and a dark border.”",
+          "quoted": true,
+          "members": [
+            "septoria_leaf_spot"
+          ],
+          "leads_to": "septoria_leaf_spot",
+          "distinctive": [
+            "border",
+            "center",
+            "typic"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "late_blight",
+        "mosaic_virus"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "“On leaves of tomato or potato, late blight begins as pale-green or olive-green areas that quickly enlarge to become brown-black, water-soaked, and oily-looking.”",
+          "quoted": true,
+          "members": [
+            "late_blight"
+          ],
+          "leads_to": "late_blight",
+          "distinctive": [
+            "becom",
+            "begin",
+            "black",
+            "blight",
+            "brown",
+            "enlarg",
+            "green",
+            "late",
+            "look",
+            "oili",
+            "oliv",
+            "pale",
+            "potato",
+            "quick",
+            "soak",
+            "tomato",
+            "water"
+          ]
+        },
+        "B": {
+          "shown": "“On leaves, typical symptoms include blotchy light and dark areas (called mosaic); cupping, curling, elongation (strapping), roughening, wrinkling and other growth distortions; and smaller than normal size.”",
+          "quoted": true,
+          "members": [
+            "mosaic_virus"
+          ],
+          "leads_to": "mosaic_virus",
+          "distinctive": [
+            "blotchi",
+            "call",
+            "cup",
+            "curl",
+            "distort",
+            "elong",
+            "growth",
+            "includ",
+            "light",
+            "mosaic",
+            "normal",
+            "roughen",
+            "size",
+            "smaller",
+            "strap",
+            "symptom",
+            "typic",
+            "wrinkl"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "late_blight",
+        "yellow_leaf_curl_virus"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "“On leaves of tomato or potato, late blight begins as pale-green or olive-green areas that quickly enlarge to become brown-black, water-soaked, and oily-looking.”",
+          "quoted": true,
+          "members": [
+            "late_blight"
+          ],
+          "leads_to": "late_blight",
+          "distinctive": [
+            "area",
+            "becom",
+            "begin",
+            "black",
+            "blight",
+            "brown",
+            "enlarg",
+            "green",
+            "late",
+            "look",
+            "oili",
+            "oliv",
+            "pale",
+            "potato",
+            "quick",
+            "soak",
+            "water"
+          ]
+        },
+        "B": {
+          "shown": "Crumpled appearance, curling, and interveinal/marginal chlorosis.",
+          "quoted": false,
+          "members": [
+            "yellow_leaf_curl_virus"
+          ],
+          "leads_to": "yellow_leaf_curl_virus",
+          "distinctive": [
+            "appear",
+            "chlorosi",
+            "crumpl",
+            "curl",
+            "intervein",
+            "margin"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "late_blight",
+        "healthy"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Do you see this?",
+      "choices": {
+        "A": {
+          "shown": "“On leaves of tomato or potato, late blight begins as pale-green or olive-green areas that quickly enlarge to become brown-black, water-soaked, and oily-looking.”",
+          "quoted": true,
+          "members": [
+            "late_blight"
+          ],
+          "leads_to": "late_blight",
+          "distinctive": [
+            "area",
+            "becom",
+            "begin",
+            "black",
+            "blight",
+            "brown",
+            "enlarg",
+            "green",
+            "late",
+            "leaf",
+            "look",
+            "oili",
+            "oliv",
+            "pale",
+            "potato",
+            "quick",
+            "soak",
+            "tomato",
+            "water"
+          ]
+        },
+        "B": {
+          "shown": "No, I do not see this on the leaf.",
+          "fixed_text": true,
+          "leads_to": "healthy",
+          "distinctive": [
+            "(no sign)"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "leaf_mold",
+        "septoria_leaf_spot"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "Pale green to yellowish spots on the upper leaf surface, turning bright yellow or brown; velvety olive-green to brown mold on the underside.",
+          "quoted": false,
+          "members": [
+            "leaf_mold"
+          ],
+          "leads_to": "leaf_mold",
+          "distinctive": [
+            "bright",
+            "brown",
+            "green",
+            "mold",
+            "oliv",
+            "pale",
+            "surfac",
+            "turn",
+            "undersid",
+            "upper",
+            "velveti",
+            "yellow"
+          ]
+        },
+        "B": {
+          "shown": "“These spots typically have a whitish center and a dark border.”",
+          "quoted": true,
+          "members": [
+            "septoria_leaf_spot"
+          ],
+          "leads_to": "septoria_leaf_spot",
+          "distinctive": [
+            "border",
+            "center",
+            "dark",
+            "white"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "leaf_mold",
+        "mosaic_virus"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "Pale green to yellowish spots on the upper leaf surface, turning bright yellow or brown; velvety olive-green to brown mold on the underside.",
+          "quoted": false,
+          "members": [
+            "leaf_mold"
+          ],
+          "leads_to": "leaf_mold",
+          "distinctive": [
+            "bright",
+            "brown",
+            "green",
+            "mold",
+            "oliv",
+            "pale",
+            "spot",
+            "surfac",
+            "turn",
+            "undersid",
+            "upper",
+            "velveti",
+            "yellow"
+          ]
+        },
+        "B": {
+          "shown": "“On leaves, typical symptoms include blotchy light and dark areas (called mosaic); cupping, curling, elongation (strapping), roughening, wrinkling and other growth distortions; and smaller than normal size.”",
+          "quoted": true,
+          "members": [
+            "mosaic_virus"
+          ],
+          "leads_to": "mosaic_virus",
+          "distinctive": [
+            "blotchi",
+            "call",
+            "cup",
+            "curl",
+            "dark",
+            "distort",
+            "elong",
+            "growth",
+            "includ",
+            "mosaic",
+            "normal",
+            "roughen",
+            "size",
+            "smaller",
+            "strap",
+            "symptom",
+            "wrinkl"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "leaf_mold",
+        "yellow_leaf_curl_virus"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "Pale green to yellowish spots on the upper leaf surface, turning bright yellow or brown; velvety olive-green to brown mold on the underside.",
+          "quoted": false,
+          "members": [
+            "leaf_mold"
+          ],
+          "leads_to": "leaf_mold",
+          "distinctive": [
+            "bright",
+            "brown",
+            "green",
+            "mold",
+            "oliv",
+            "pale",
+            "spot",
+            "surfac",
+            "turn",
+            "undersid",
+            "upper",
+            "velveti",
+            "yellow"
+          ]
+        },
+        "B": {
+          "shown": "Crumpled appearance, curling, and interveinal/marginal chlorosis.",
+          "quoted": false,
+          "members": [
+            "yellow_leaf_curl_virus"
+          ],
+          "leads_to": "yellow_leaf_curl_virus",
+          "distinctive": [
+            "appear",
+            "chlorosi",
+            "crumpl",
+            "curl",
+            "intervein",
+            "margin"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "leaf_mold",
+        "healthy"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Do you see this?",
+      "choices": {
+        "A": {
+          "shown": "Pale green to yellowish spots on the upper leaf surface, turning bright yellow or brown; velvety olive-green to brown mold on the underside.",
+          "quoted": false,
+          "members": [
+            "leaf_mold"
+          ],
+          "leads_to": "leaf_mold",
+          "distinctive": [
+            "bright",
+            "brown",
+            "green",
+            "leaf",
+            "mold",
+            "oliv",
+            "pale",
+            "spot",
+            "surfac",
+            "turn",
+            "undersid",
+            "upper",
+            "velveti",
+            "yellow"
+          ]
+        },
+        "B": {
+          "shown": "No, I do not see this on the leaf.",
+          "fixed_text": true,
+          "leads_to": "healthy",
+          "distinctive": [
+            "(no sign)"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "septoria_leaf_spot",
+        "mosaic_virus"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "“These spots typically have a whitish center and a dark border.”",
+          "quoted": true,
+          "members": [
+            "septoria_leaf_spot"
+          ],
+          "leads_to": "septoria_leaf_spot",
+          "distinctive": [
+            "border",
+            "center",
+            "spot",
+            "white"
+          ]
+        },
+        "B": {
+          "shown": "“On leaves, typical symptoms include blotchy light and dark areas (called mosaic); cupping, curling, elongation (strapping), roughening, wrinkling and other growth distortions; and smaller than normal size.”",
+          "quoted": true,
+          "members": [
+            "mosaic_virus"
+          ],
+          "leads_to": "mosaic_virus",
+          "distinctive": [
+            "area",
+            "blotchi",
+            "call",
+            "cup",
+            "curl",
+            "distort",
+            "elong",
+            "growth",
+            "includ",
+            "light",
+            "mosaic",
+            "normal",
+            "roughen",
+            "size",
+            "smaller",
+            "strap",
+            "wrinkl"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "septoria_leaf_spot",
+        "yellow_leaf_curl_virus"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "“These spots typically have a whitish center and a dark border.”",
+          "quoted": true,
+          "members": [
+            "septoria_leaf_spot"
+          ],
+          "leads_to": "septoria_leaf_spot",
+          "distinctive": [
+            "border",
+            "center",
+            "dark",
+            "spot",
+            "typic",
+            "white"
+          ]
+        },
+        "B": {
+          "shown": "Crumpled appearance, curling, and interveinal/marginal chlorosis.",
+          "quoted": false,
+          "members": [
+            "yellow_leaf_curl_virus"
+          ],
+          "leads_to": "yellow_leaf_curl_virus",
+          "distinctive": [
+            "chlorosi",
+            "crumpl",
+            "curl",
+            "intervein",
+            "margin"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "septoria_leaf_spot",
+        "healthy"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Do you see this?",
+      "choices": {
+        "A": {
+          "shown": "“These spots typically have a whitish center and a dark border.”",
+          "quoted": true,
+          "members": [
+            "septoria_leaf_spot"
+          ],
+          "leads_to": "septoria_leaf_spot",
+          "distinctive": [
+            "border",
+            "center",
+            "dark",
+            "spot",
+            "typic",
+            "white"
+          ]
+        },
+        "B": {
+          "shown": "No, I do not see this on the leaf.",
+          "fixed_text": true,
+          "leads_to": "healthy",
+          "distinctive": [
+            "(no sign)"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "mosaic_virus",
+        "yellow_leaf_curl_virus"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Which of these fits it better?",
+      "choices": {
+        "A": {
+          "shown": "“On leaves, typical symptoms include blotchy light and dark areas (called mosaic); cupping, curling, elongation (strapping), roughening, wrinkling and other growth distortions; and smaller than normal size.”",
+          "quoted": true,
+          "members": [
+            "mosaic_virus"
+          ],
+          "leads_to": "mosaic_virus",
+          "distinctive": [
+            "area",
+            "blotchi",
+            "call",
+            "cup",
+            "dark",
+            "distort",
+            "elong",
+            "growth",
+            "includ",
+            "light",
+            "mosaic",
+            "normal",
+            "roughen",
+            "size",
+            "smaller",
+            "strap",
+            "typic",
+            "wrinkl"
+          ]
+        },
+        "B": {
+          "shown": "Crumpled appearance, curling, and interveinal/marginal chlorosis.",
+          "quoted": false,
+          "members": [
+            "yellow_leaf_curl_virus"
+          ],
+          "leads_to": "yellow_leaf_curl_virus",
+          "distinctive": [
+            "appear",
+            "chlorosi",
+            "crumpl",
+            "intervein",
+            "margin"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "mosaic_virus",
+        "healthy"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Do you see this?",
+      "choices": {
+        "A": {
+          "shown": "“On leaves, typical symptoms include blotchy light and dark areas (called mosaic); cupping, curling, elongation (strapping), roughening, wrinkling and other growth distortions; and smaller than normal size.”",
+          "quoted": true,
+          "members": [
+            "mosaic_virus"
+          ],
+          "leads_to": "mosaic_virus",
+          "distinctive": [
+            "area",
+            "blotchi",
+            "call",
+            "cup",
+            "curl",
+            "dark",
+            "distort",
+            "elong",
+            "growth",
+            "includ",
+            "leaf",
+            "light",
+            "mosaic",
+            "normal",
+            "roughen",
+            "size",
+            "smaller",
+            "strap",
+            "symptom",
+            "typic",
+            "wrinkl"
+          ]
+        },
+        "B": {
+          "shown": "No, I do not see this on the leaf.",
+          "fixed_text": true,
+          "leads_to": "healthy",
+          "distinctive": [
+            "(no sign)"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    },
+    {
+      "pair": [
+        "yellow_leaf_curl_virus",
+        "healthy"
+      ],
+      "asked": true,
+      "stem": "Look closely at the leaf. Do you see this?",
+      "choices": {
+        "A": {
+          "shown": "Crumpled appearance, curling, and interveinal/marginal chlorosis.",
+          "quoted": false,
+          "members": [
+            "yellow_leaf_curl_virus"
+          ],
+          "leads_to": "yellow_leaf_curl_virus",
+          "distinctive": [
+            "appear",
+            "chlorosi",
+            "crumpl",
+            "curl",
+            "intervein",
+            "margin"
+          ]
+        },
+        "B": {
+          "shown": "No, I do not see this on the leaf.",
+          "fixed_text": true,
+          "leads_to": "healthy",
+          "distinctive": [
+            "(no sign)"
+          ]
+        }
+      },
+      "not_sure": "refer"
+    }
+  ]
+}

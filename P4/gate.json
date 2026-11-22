@@ -1,0 +1,67 @@
+{
+  "served": "change_ensemble",
+  "views": [
+    "finder_box",
+    "whole"
+  ],
+  "questions_allowed": true,
+  "merged": [],
+  "runs": {
+    "baseline_seed0": {
+      "temperature": 5.478746440586112,
+      "advise_at": 0.5593581250309898,
+      "ask_at": 0.7506948982127897,
+      "retake_below": 0.1595,
+      "groups": null
+    },
+    "baseline_seed1": {
+      "temperature": 5.399169699472008,
+      "advise_at": 0.5770864218782465,
+      "ask_at": 0.7359889850044599,
+      "retake_below": 0.1595,
+      "groups": null
+    },
+    "baseline_seed2": {
+      "temperature": 5.243466896483309,
+      "advise_at": 0.5971583694877186,
+      "ask_at": 0.7387608254928417,
+      "retake_below": 0.1595,
+      "groups": null
+    },
+    "baseline_ensemble": {
+      "temperature": 5.320748780733516,
+      "advise_at": 0.5708225455137117,
+      "ask_at": 0.7621465139285044,
+      "retake_below": 0.1595,
+      "groups": null
+    },
+    "change_seed0": {
+      "temperature": 2.040662126373639,
+      "advise_at": 0.7469749651155353,
+      "ask_at": 0.9107031262269316,
+      "retake_below": 0.1595,
+      "groups": null
+    },
+    "change_seed1": {
+      "temperature": 2.040662126373639,
+      "advise_at": 0.7197093207841241,
+      "ask_at": 0.8969346497932671,
+      "retake_below": 0.1595,
+      "groups": null
+    },
+    "change_seed2": {
+      "temperature": 2.085943014162915,
+      "advise_at": 0.8118903095603548,
+      "ask_at": 0.9308101262671971,
+      "retake_below": 0.1595,
+      "groups": null
+    },
+    "change_ensemble": {
+      "temperature": 2.011022272897517,
+      "advise_at": 0.7775192575661662,
+      "ask_at": 0.90006433178269,
+      "retake_below": 0.1595,
+      "groups": null
+    }
+  }
+}
