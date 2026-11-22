@@ -30,7 +30,7 @@ Sources: [Late Blight (UW Plant Disease Facts D0068)](https://pddc.wisc.edu/2015
 
 | # | Shown to the gardener | Source sentence | Check | Reviewer 1 | Reviewer 2 |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Pull infected plants. | [2] For home gardeners, the preferred method of disposal is to pull affected plants (roots and all), and place them in plastic bags. | passed | [ ] | [ ] |
+| 1 | “For home gardeners, the preferred method of disposal is to pull affected plants (roots and all), and place them in plastic bags.” | [2] For home gardeners, the preferred method of disposal is to pull affected plants (roots and all), and place them in plastic bags. | quoted | [ ] | [ ] |
 | 2 | “The bags should be left in the sun for a few days to make sure that plants, as well as any P. infestans, are totally killed.” | [3] The bags should be left in the sun for a few days to make sure that plants, as well as any P. infestans, are totally killed. | quoted | [ ] | [ ] |
 
 ## Care: leaf mold

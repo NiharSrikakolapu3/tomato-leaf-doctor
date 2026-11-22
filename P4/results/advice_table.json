@@ -226,17 +226,19 @@
       "raw": "1. Pull infected plants [1].\n2. Place roots and leaves in plastic bags [2].\n3. Leave bags in direct sunlight for a few days [3].",
       "steps": [
         {
-          "shown": "Pull infected plants.",
-          "quoted": false,
+          "shown": "“For home gardeners, the preferred method of disposal is to pull affected plants (roots and all), and place them in plastic bags.”",
+          "quoted": true,
           "check": {
-            "text": "Pull infected plants.",
+            "text": "Place roots and leaves in plastic bags.",
             "cited": [
               1
             ],
-            "ok": true,
-            "support": 1.0,
-            "problems": [],
-            "recited": true
+            "ok": false,
+            "support": 0.8,
+            "problems": [
+              "words not in source: leaf"
+            ],
+            "recited": false
           },
           "source": "https://pddc.wisc.edu/2015/07/28/late-blight/"
         },

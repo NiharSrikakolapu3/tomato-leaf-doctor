@@ -38,6 +38,7 @@ TOKEN = re.compile(r"[a-z]+(?:'[a-z]+)?|\d+(?:[./]\d+)?%?")
 def tokens(text):
     """Lowercase word and number tokens, in order."""
     text = text.lower().replace("’", "'").replace("‘", "'")
+    text = re.sub(r"\bnon-", "non", text)  # "non-host" is not "host"
     for symbol, spelled in FRACTIONS.items():
         text = text.replace(symbol, spelled)
     return TOKEN.findall(text)

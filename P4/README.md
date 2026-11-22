@@ -49,7 +49,7 @@ The risk test passes in sample with all 8 classes, so no classes are merged. Hel
 
 `build_advice.py` builds one care card per class and one question per pair of classes.
 
-- **Care steps.** The writer turns a class's numbered care sentences into 3 to 5 steps, each citing a sentence. 13 of 25 steps pass the check, and the rest are shown as quotes of the sentence they cite. Every card also quotes the sheet's own prohibitions, such as "should not be composted".
+- **Care steps.** The writer turns a class's numbered care sentences into 3 to 5 steps, each citing a sentence. 12 of 25 steps pass the check, and the rest are shown as quotes of the sentence they cite. Every card also quotes the sheet's own prohibitions, such as "should not be composted".
 - **Questions.** Each disease's key leaf sign is shortened to one choice. 3 of 7 signs pass, and the rest are quoted. All 28 pairs get a question. "Not sure" always refers.
 - **Review sheet.** `results/review_sheet.md` puts every shown step beside its source sentence for the two-teammate check.
 
@@ -71,7 +71,7 @@ python build_advice.py                                 # writes results/advice_t
 python validate_source_check.py                        # writes results/source_check_validation.json
 python trace_dev.py --weights RUNS/dinov3_vitb --logits RUNS/dinov3_vitb --photos PLANTDOC_DIR
 python demo.py --weights RUNS/dinov3_vitb --share      # Gradio app, public link in Colab
-python -m pytest tests                                 # gate unit tests
+python -m pytest tests                                 # gate and source-check unit tests
 ```
 
 `fit_gate.py` takes 3 seconds, `build_advice.py` about 2 minutes on an Apple M4 Pro, and the trace about 1 minute. The trace agrees with the gate on the saved logits for 111 of 112 photos.

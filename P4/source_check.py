@@ -15,11 +15,14 @@ A step that still fails is replaced by its source sentence, quoted word for word
 Known blind spot: swapping two words that are both in the sentence ("bury or hot compost"
 becoming "compost or hot compost") keeps the same words and passes.
 """
+import re
+from collections import Counter
 from dataclasses import asdict, dataclass, field
 
 from textmatch import STOPWORDS, content_stems, negation_count, numbers, stem, tokens
 
 SUPPORT_MIN = 1.0
+CLAUSE_END = re.compile(r"[,;:()]")
 # Words whose addition changes what the gardener does to the plant or the fruit.
 RISK_WORDS = {
     stem(w)
@@ -55,18 +58,28 @@ class StepCheck:
 def source_negations(step_stems, sentence):
     """Negations in the source sentence that negate something the step says.
 
-    A negation counts when the first content word after it ("not be composted",
-    "avoid overhead watering") is one of the step's words, so "do not eat symptomatic
+    A negation counts when the step uses the first content word after it ("not be
+    composted", "avoid overhead watering"), or a later word of its clause that the sentence
+    uses nowhere else ("nor canned or otherwise preserved"). So "do not eat symptomatic
     fruit" does not count against a step about burning plants.
     """
-    words = tokens(sentence)
+    clauses = [tokens(clause) for clause in CLAUSE_END.split(sentence)]
+    words = [w for clause in clauses for w in clause]
+    in_sentence = Counter(content_stems(sentence))
     count = 0
-    for position, word in enumerate(words):
-        if negation_count([word]) == 0:
-            continue
-        following = [w for w in words[position + 1 : position + 5] if w not in STOPWORDS]
-        if following and stem(following[0]) in step_stems:
-            count += 1
+    start = 0
+    for clause in clauses:
+        for offset, word in enumerate(clause):
+            if negation_count([word]) == 0:
+                continue
+            position = start + offset
+            following = [w for w in words[position + 1 : position + 5] if w not in STOPWORDS]
+            negated = {stem(following[0])} if following else set()
+            rest = Counter(content_stems(" ".join(clause[offset + 1 :])))
+            negated |= {s for s, n in rest.items() if n == in_sentence[s]}
+            if negated & step_stems:
+                count += 1
+        start += len(clause)
     return count
 
 
@@ -142,10 +155,10 @@ def quote(passage, indices):
 def checked_steps(steps, passage):
     """Run the check on (text, cited) steps, quoting the source for any that fail.
 
-    A quote that repeats an earlier step's sentences is dropped.
+    A quote that repeats an earlier quote is dropped. A quote of a sentence that an earlier
+    step only shortened replaces that step, so the rest of the sentence is not lost.
     """
     results = []
-    shown_spans = []
     seen_texts = set()
     for text, cited in steps:
         if text and text.lower() in seen_texts:
@@ -154,10 +167,12 @@ def checked_steps(steps, passage):
         check = check_step(text, cited, passage) if text else None
         if check is None:
             check = StepCheck("", cited, False, 0.0, ["no step written"], False)
-        if not check.ok and any(set(check.cited) <= set(span) for span in shown_spans):
-            continue
+        if not check.ok:
+            same = [r for r in results if set(check.cited) <= set(r["check"]["cited"])]
+            if any(r["quoted"] for r in same):
+                continue
+            results = [r for r in results if r not in same]
         shown = text if check.ok else quote(passage, check.cited)
-        shown_spans.append(check.cited)
         results.append({"shown": shown, "quoted": not check.ok, "check": check.to_dict()})
     return results
 
