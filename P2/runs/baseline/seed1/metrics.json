@@ -1,0 +1,39 @@
+{
+  "final": {
+    "pv_dev": {
+      "loss": 0.03479135036468506,
+      "acc": 0.9874047066622472,
+      "macro_f1": 0.9859603965297172
+    },
+    "pd_dev_crop": {
+      "loss": 2.726513624191284,
+      "acc": 0.3969298245614035,
+      "macro_f1": 0.2394356932330835
+    },
+    "pd_dev_photo": {
+      "loss": 2.8683691024780273,
+      "acc": 0.32727272727272727,
+      "macro_f1": 0.242933711946317
+    }
+  },
+  "seconds": 102.6116714477539,
+  "config": {
+    "arm": "baseline",
+    "seed": 1,
+    "real_fraction": 0.0,
+    "batch_size": 64,
+    "head_steps": 200,
+    "head_lr": 0.001,
+    "full_steps": 600,
+    "full_lr": 0.0002,
+    "weight_decay": 0.01,
+    "warmup_steps": 30,
+    "eval_every": 50,
+    "eval_batch_size": 256,
+    "hflip": true,
+    "vflip": true,
+    "color_jitter": 0.2,
+    "channels_last": true,
+    "amp": true
+  }
+}

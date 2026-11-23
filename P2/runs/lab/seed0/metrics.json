@@ -1,0 +1,25 @@
+{
+  "loss": 0.034958355128765106,
+  "acc": 0.9874047066622472,
+  "macro_f1": 0.9856845744722496,
+  "seconds": 280.00035405158997,
+  "config": {
+    "arm": "lab",
+    "seed": 0,
+    "batch_size": 64,
+    "head_steps": 200,
+    "head_lr": 0.001,
+    "full_steps": 600,
+    "full_lr": 0.0002,
+    "weight_decay": 0.01,
+    "warmup_steps": 30,
+    "eval_every": 50,
+    "eval_batch_size": 256,
+    "hflip": true,
+    "vflip": true,
+    "color_jitter": 0.2,
+    "amp": true,
+    "channels_last": true,
+    "extra": {}
+  }
+}

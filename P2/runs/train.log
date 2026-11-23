@@ -1,0 +1,145 @@
+plantdoc:   0%|          | 0/746 [00:00<?, ?it/s]plantdoc: 100%|##########| 746/746 [00:00<00:00, 22664.36it/s]
+=== arm baseline | seed 0 ===
+  stage 1: 10,248 trainable params
+  step   50 | stage 1 | train 1.3027 | pv_dev F1 0.812 | pd_dev_crop F1 0.227 | pd_dev_photo F1 0.190 |    51s
+  step  100 | stage 1 | train 0.7061 | pv_dev F1 0.832 | pd_dev_crop F1 0.199 | pd_dev_photo F1 0.153 |    55s
+  step  150 | stage 1 | train 0.5384 | pv_dev F1 0.868 | pd_dev_crop F1 0.180 | pd_dev_photo F1 0.165 |    59s
+  step  200 | stage 1 | train 0.4643 | pv_dev F1 0.888 | pd_dev_crop F1 0.178 | pd_dev_photo F1 0.177 |    62s
+  stage 2: 4,017,796 trainable params
+  step  250 | stage 2 | train 0.7153 | pv_dev F1 0.945 | pd_dev_crop F1 0.223 | pd_dev_photo F1 0.190 |    89s
+  step  300 | stage 2 | train 0.1537 | pv_dev F1 0.974 | pd_dev_crop F1 0.256 | pd_dev_photo F1 0.245 |    96s
+  step  350 | stage 2 | train 0.0811 | pv_dev F1 0.973 | pd_dev_crop F1 0.228 | pd_dev_photo F1 0.245 |   103s
+  step  400 | stage 2 | train 0.0614 | pv_dev F1 0.978 | pd_dev_crop F1 0.260 | pd_dev_photo F1 0.217 |   110s
+  step  450 | stage 2 | train 0.0469 | pv_dev F1 0.982 | pd_dev_crop F1 0.243 | pd_dev_photo F1 0.251 |   117s
+  step  500 | stage 2 | train 0.0326 | pv_dev F1 0.984 | pd_dev_crop F1 0.267 | pd_dev_photo F1 0.278 |   124s
+  step  550 | stage 2 | train 0.0345 | pv_dev F1 0.982 | pd_dev_crop F1 0.249 | pd_dev_photo F1 0.246 |   131s
+  step  600 | stage 2 | train 0.0268 | pv_dev F1 0.985 | pd_dev_crop F1 0.253 | pd_dev_photo F1 0.268 |   138s
+  step  650 | stage 2 | train 0.0272 | pv_dev F1 0.987 | pd_dev_crop F1 0.240 | pd_dev_photo F1 0.254 |   146s
+  step  700 | stage 2 | train 0.0193 | pv_dev F1 0.985 | pd_dev_crop F1 0.258 | pd_dev_photo F1 0.255 |   153s
+  step  750 | stage 2 | train 0.0292 | pv_dev F1 0.987 | pd_dev_crop F1 0.264 | pd_dev_photo F1 0.257 |   160s
+  step  800 | stage 2 | train 0.0192 | pv_dev F1 0.986 | pd_dev_crop F1 0.256 | pd_dev_photo F1 0.280 |   168s
+  done in 168s: pv_dev F1 0.9862, pd_dev_crop F1 0.2564, pd_dev_photo F1 0.2799
+=== arm baseline | seed 1 ===
+  stage 1: 10,248 trainable params
+  step   50 | stage 1 | train 1.3000 | pv_dev F1 0.811 | pd_dev_crop F1 0.225 | pd_dev_photo F1 0.168 |     4s
+  step  100 | stage 1 | train 0.7111 | pv_dev F1 0.859 | pd_dev_crop F1 0.202 | pd_dev_photo F1 0.172 |     8s
+  step  150 | stage 1 | train 0.5379 | pv_dev F1 0.880 | pd_dev_crop F1 0.210 | pd_dev_photo F1 0.167 |    12s
+  step  200 | stage 1 | train 0.4614 | pv_dev F1 0.903 | pd_dev_crop F1 0.188 | pd_dev_photo F1 0.117 |    16s
+  stage 2: 4,017,796 trainable params
+  step  250 | stage 2 | train 0.7357 | pv_dev F1 0.942 | pd_dev_crop F1 0.231 | pd_dev_photo F1 0.261 |    23s
+  step  300 | stage 2 | train 0.1339 | pv_dev F1 0.967 | pd_dev_crop F1 0.233 | pd_dev_photo F1 0.218 |    31s
+  step  350 | stage 2 | train 0.0682 | pv_dev F1 0.978 | pd_dev_crop F1 0.228 | pd_dev_photo F1 0.260 |    38s
+  step  400 | stage 2 | train 0.0622 | pv_dev F1 0.979 | pd_dev_crop F1 0.246 | pd_dev_photo F1 0.256 |    46s
+  step  450 | stage 2 | train 0.0453 | pv_dev F1 0.981 | pd_dev_crop F1 0.227 | pd_dev_photo F1 0.217 |    53s
+  step  500 | stage 2 | train 0.0438 | pv_dev F1 0.983 | pd_dev_crop F1 0.253 | pd_dev_photo F1 0.248 |    60s
+  step  550 | stage 2 | train 0.0300 | pv_dev F1 0.984 | pd_dev_crop F1 0.256 | pd_dev_photo F1 0.245 |    67s
+  step  600 | stage 2 | train 0.0291 | pv_dev F1 0.985 | pd_dev_crop F1 0.250 | pd_dev_photo F1 0.233 |    74s
+  step  650 | stage 2 | train 0.0235 | pv_dev F1 0.986 | pd_dev_crop F1 0.254 | pd_dev_photo F1 0.240 |    81s
+  step  700 | stage 2 | train 0.0222 | pv_dev F1 0.984 | pd_dev_crop F1 0.258 | pd_dev_photo F1 0.253 |    88s
+  step  750 | stage 2 | train 0.0197 | pv_dev F1 0.985 | pd_dev_crop F1 0.256 | pd_dev_photo F1 0.249 |    95s
+  step  800 | stage 2 | train 0.0183 | pv_dev F1 0.986 | pd_dev_crop F1 0.239 | pd_dev_photo F1 0.243 |   103s
+  done in 103s: pv_dev F1 0.9860, pd_dev_crop F1 0.2394, pd_dev_photo F1 0.2429
+=== arm baseline | seed 2 ===
+  stage 1: 10,248 trainable params
+  step   50 | stage 1 | train 1.2903 | pv_dev F1 0.811 | pd_dev_crop F1 0.184 | pd_dev_photo F1 0.154 |     4s
+  step  100 | stage 1 | train 0.7021 | pv_dev F1 0.860 | pd_dev_crop F1 0.182 | pd_dev_photo F1 0.159 |     8s
+  step  150 | stage 1 | train 0.5327 | pv_dev F1 0.871 | pd_dev_crop F1 0.188 | pd_dev_photo F1 0.180 |    12s
+  step  200 | stage 1 | train 0.4443 | pv_dev F1 0.883 | pd_dev_crop F1 0.186 | pd_dev_photo F1 0.181 |    15s
+  stage 2: 4,017,796 trainable params
+  step  250 | stage 2 | train 0.7558 | pv_dev F1 0.938 | pd_dev_crop F1 0.245 | pd_dev_photo F1 0.239 |    23s
+  step  300 | stage 2 | train 0.1531 | pv_dev F1 0.967 | pd_dev_crop F1 0.224 | pd_dev_photo F1 0.224 |    30s
+  step  350 | stage 2 | train 0.0756 | pv_dev F1 0.976 | pd_dev_crop F1 0.232 | pd_dev_photo F1 0.201 |    37s
+  step  400 | stage 2 | train 0.0624 | pv_dev F1 0.975 | pd_dev_crop F1 0.236 | pd_dev_photo F1 0.212 |    44s
+  step  450 | stage 2 | train 0.0450 | pv_dev F1 0.983 | pd_dev_crop F1 0.245 | pd_dev_photo F1 0.206 |    51s
+  step  500 | stage 2 | train 0.0465 | pv_dev F1 0.989 | pd_dev_crop F1 0.234 | pd_dev_photo F1 0.199 |    58s
+  step  550 | stage 2 | train 0.0373 | pv_dev F1 0.986 | pd_dev_crop F1 0.246 | pd_dev_photo F1 0.229 |    65s
+  step  600 | stage 2 | train 0.0343 | pv_dev F1 0.989 | pd_dev_crop F1 0.244 | pd_dev_photo F1 0.217 |    72s
+  step  650 | stage 2 | train 0.0248 | pv_dev F1 0.988 | pd_dev_crop F1 0.259 | pd_dev_photo F1 0.241 |    79s
+  step  700 | stage 2 | train 0.0250 | pv_dev F1 0.988 | pd_dev_crop F1 0.246 | pd_dev_photo F1 0.233 |    87s
+  step  750 | stage 2 | train 0.0229 | pv_dev F1 0.989 | pd_dev_crop F1 0.272 | pd_dev_photo F1 0.256 |    94s
+  step  800 | stage 2 | train 0.0192 | pv_dev F1 0.987 | pd_dev_crop F1 0.252 | pd_dev_photo F1 0.237 |   101s
+  done in 101s: pv_dev F1 0.9868, pd_dev_crop F1 0.2524, pd_dev_photo F1 0.2367
+=== arm change | seed 0 ===
+  stage 1: 10,248 trainable params
+  step   50 | stage 1 | train 1.5825 | pv_dev F1 0.692 | pd_dev_crop F1 0.361 | pd_dev_photo F1 0.397 |     4s
+  step  100 | stage 1 | train 1.1128 | pv_dev F1 0.807 | pd_dev_crop F1 0.411 | pd_dev_photo F1 0.373 |     8s
+  step  150 | stage 1 | train 0.9513 | pv_dev F1 0.827 | pd_dev_crop F1 0.421 | pd_dev_photo F1 0.413 |    11s
+  step  200 | stage 1 | train 0.8878 | pv_dev F1 0.837 | pd_dev_crop F1 0.418 | pd_dev_photo F1 0.475 |    15s
+  stage 2: 4,017,796 trainable params
+  step  250 | stage 2 | train 1.0942 | pv_dev F1 0.885 | pd_dev_crop F1 0.429 | pd_dev_photo F1 0.484 |    22s
+  step  300 | stage 2 | train 0.5355 | pv_dev F1 0.943 | pd_dev_crop F1 0.419 | pd_dev_photo F1 0.566 |    29s
+  step  350 | stage 2 | train 0.3678 | pv_dev F1 0.958 | pd_dev_crop F1 0.443 | pd_dev_photo F1 0.585 |    36s
+  step  400 | stage 2 | train 0.2753 | pv_dev F1 0.957 | pd_dev_crop F1 0.468 | pd_dev_photo F1 0.564 |    44s
+  step  450 | stage 2 | train 0.2006 | pv_dev F1 0.959 | pd_dev_crop F1 0.460 | pd_dev_photo F1 0.575 |    51s
+  step  500 | stage 2 | train 0.1712 | pv_dev F1 0.963 | pd_dev_crop F1 0.444 | pd_dev_photo F1 0.578 |    58s
+  step  550 | stage 2 | train 0.1431 | pv_dev F1 0.965 | pd_dev_crop F1 0.470 | pd_dev_photo F1 0.562 |    65s
+  step  600 | stage 2 | train 0.1365 | pv_dev F1 0.968 | pd_dev_crop F1 0.439 | pd_dev_photo F1 0.564 |    72s
+  step  650 | stage 2 | train 0.1141 | pv_dev F1 0.966 | pd_dev_crop F1 0.432 | pd_dev_photo F1 0.521 |    79s
+  step  700 | stage 2 | train 0.1177 | pv_dev F1 0.967 | pd_dev_crop F1 0.429 | pd_dev_photo F1 0.520 |    87s
+  step  750 | stage 2 | train 0.0977 | pv_dev F1 0.969 | pd_dev_crop F1 0.446 | pd_dev_photo F1 0.538 |    94s
+  step  800 | stage 2 | train 0.1297 | pv_dev F1 0.969 | pd_dev_crop F1 0.429 | pd_dev_photo F1 0.512 |   101s
+  done in 101s: pv_dev F1 0.9690, pd_dev_crop F1 0.4289, pd_dev_photo F1 0.5122
+=== arm change | seed 1 ===
+  stage 1: 10,248 trainable params
+  step   50 | stage 1 | train 1.5537 | pv_dev F1 0.721 | pd_dev_crop F1 0.363 | pd_dev_photo F1 0.402 |     4s
+  step  100 | stage 1 | train 1.1208 | pv_dev F1 0.787 | pd_dev_crop F1 0.384 | pd_dev_photo F1 0.437 |     7s
+  step  150 | stage 1 | train 0.9354 | pv_dev F1 0.824 | pd_dev_crop F1 0.408 | pd_dev_photo F1 0.480 |    11s
+  step  200 | stage 1 | train 0.8744 | pv_dev F1 0.833 | pd_dev_crop F1 0.409 | pd_dev_photo F1 0.515 |    15s
+  stage 2: 4,017,796 trainable params
+  step  250 | stage 2 | train 1.0849 | pv_dev F1 0.902 | pd_dev_crop F1 0.428 | pd_dev_photo F1 0.465 |    22s
+  step  300 | stage 2 | train 0.5591 | pv_dev F1 0.938 | pd_dev_crop F1 0.436 | pd_dev_photo F1 0.466 |    29s
+  step  350 | stage 2 | train 0.3849 | pv_dev F1 0.954 | pd_dev_crop F1 0.454 | pd_dev_photo F1 0.513 |    36s
+  step  400 | stage 2 | train 0.2625 | pv_dev F1 0.959 | pd_dev_crop F1 0.438 | pd_dev_photo F1 0.534 |    44s
+  step  450 | stage 2 | train 0.2145 | pv_dev F1 0.964 | pd_dev_crop F1 0.464 | pd_dev_photo F1 0.509 |    51s
+  step  500 | stage 2 | train 0.1681 | pv_dev F1 0.973 | pd_dev_crop F1 0.484 | pd_dev_photo F1 0.529 |    58s
+  step  550 | stage 2 | train 0.1421 | pv_dev F1 0.972 | pd_dev_crop F1 0.463 | pd_dev_photo F1 0.509 |    65s
+  step  600 | stage 2 | train 0.1207 | pv_dev F1 0.971 | pd_dev_crop F1 0.481 | pd_dev_photo F1 0.532 |    72s
+  step  650 | stage 2 | train 0.1197 | pv_dev F1 0.974 | pd_dev_crop F1 0.489 | pd_dev_photo F1 0.546 |    79s
+  step  700 | stage 2 | train 0.1011 | pv_dev F1 0.976 | pd_dev_crop F1 0.475 | pd_dev_photo F1 0.501 |    86s
+  step  750 | stage 2 | train 0.1062 | pv_dev F1 0.977 | pd_dev_crop F1 0.482 | pd_dev_photo F1 0.517 |    94s
+  step  800 | stage 2 | train 0.1112 | pv_dev F1 0.974 | pd_dev_crop F1 0.472 | pd_dev_photo F1 0.491 |   102s
+  done in 102s: pv_dev F1 0.9743, pd_dev_crop F1 0.4717, pd_dev_photo F1 0.4906
+=== arm change | seed 2 ===
+  stage 1: 10,248 trainable params
+  step   50 | stage 1 | train 1.5846 | pv_dev F1 0.733 | pd_dev_crop F1 0.379 | pd_dev_photo F1 0.411 |     4s
+  step  100 | stage 1 | train 1.1242 | pv_dev F1 0.812 | pd_dev_crop F1 0.392 | pd_dev_photo F1 0.451 |     8s
+  step  150 | stage 1 | train 0.9707 | pv_dev F1 0.822 | pd_dev_crop F1 0.416 | pd_dev_photo F1 0.451 |    12s
+  step  200 | stage 1 | train 0.8750 | pv_dev F1 0.842 | pd_dev_crop F1 0.428 | pd_dev_photo F1 0.446 |    16s
+  stage 2: 4,017,796 trainable params
+  step  250 | stage 2 | train 1.0994 | pv_dev F1 0.897 | pd_dev_crop F1 0.440 | pd_dev_photo F1 0.491 |    23s
+  step  300 | stage 2 | train 0.5192 | pv_dev F1 0.937 | pd_dev_crop F1 0.458 | pd_dev_photo F1 0.534 |    30s
+  step  350 | stage 2 | train 0.3768 | pv_dev F1 0.951 | pd_dev_crop F1 0.461 | pd_dev_photo F1 0.522 |    37s
+  step  400 | stage 2 | train 0.2768 | pv_dev F1 0.958 | pd_dev_crop F1 0.475 | pd_dev_photo F1 0.554 |    44s
+  step  450 | stage 2 | train 0.2231 | pv_dev F1 0.959 | pd_dev_crop F1 0.471 | pd_dev_photo F1 0.565 |    51s
+  step  500 | stage 2 | train 0.1863 | pv_dev F1 0.961 | pd_dev_crop F1 0.432 | pd_dev_photo F1 0.524 |    58s
+  step  550 | stage 2 | train 0.1432 | pv_dev F1 0.966 | pd_dev_crop F1 0.462 | pd_dev_photo F1 0.552 |    65s
+  step  600 | stage 2 | train 0.1311 | pv_dev F1 0.973 | pd_dev_crop F1 0.486 | pd_dev_photo F1 0.560 |    72s
+  step  650 | stage 2 | train 0.1263 | pv_dev F1 0.972 | pd_dev_crop F1 0.465 | pd_dev_photo F1 0.564 |    79s
+  step  700 | stage 2 | train 0.1060 | pv_dev F1 0.969 | pd_dev_crop F1 0.451 | pd_dev_photo F1 0.538 |    86s
+  step  750 | stage 2 | train 0.1082 | pv_dev F1 0.972 | pd_dev_crop F1 0.476 | pd_dev_photo F1 0.531 |    93s
+  step  800 | stage 2 | train 0.0973 | pv_dev F1 0.974 | pd_dev_crop F1 0.473 | pd_dev_photo F1 0.526 |   100s
+  done in 100s: pv_dev F1 0.9743, pd_dev_crop F1 0.4731, pd_dev_photo F1 0.5257
+
+pd_dev_photo
+                          macro_f1  ci_low  ci_high     acc  seeds
+                                                                  
+baseline                    0.2532  0.1841   0.3104  0.3333    3.0
+change                      0.5095  0.4160   0.5832  0.5091    3.0
+gain (change - baseline)    0.2563  0.1606   0.3446  0.1758    NaN
+majority-class floor        0.0432     NaN      NaN  0.2091    NaN
+
+pd_dev_crop
+                          macro_f1  ci_low  ci_high     acc  seeds
+                                                                  
+baseline                    0.2494  0.2049   0.2943  0.4094    3.0
+change                      0.4579  0.3895   0.5223  0.5482    3.0
+gain (change - baseline)    0.2085  0.1460   0.2737  0.1389    NaN
+majority-class floor        0.0514     NaN      NaN  0.2588    NaN
+
+pv_dev
+                          macro_f1  ci_low  ci_high     acc  seeds
+                                                                  
+baseline                    0.9863  0.9821   0.9902  0.9882    3.0
+change                      0.9725  0.9659   0.9787  0.9782    3.0
+gain (change - baseline)   -0.0138 -0.0189  -0.0090 -0.0099    NaN
+majority-class floor        0.0655     NaN      NaN  0.3547    NaN
